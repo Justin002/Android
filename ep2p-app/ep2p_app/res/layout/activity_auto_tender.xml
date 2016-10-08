@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/e_progressbar_bg_null"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        layout="@layout/title_layout" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_line"
+        android:background="@color/e_progressbar_bg_null" />
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/e_progressbar_bg_null"
+            android:layout_centerHorizontal="true" 
+        >
+		
+        <include 
+            android:id="@+id/ll_wifi_off"
+            layout="@layout/wifi_off_layout"
+            android:visibility="gone"/>
+        
+        <LinearLayout 
+            android:id="@+id/ll_auto_tender_null_bg"
+            android:layout_height="match_parent" 
+			android:layout_width="match_parent"
+			android:background="@color/e_progressbar_bg_null"
+			android:orientation="vertical"
+			android:gravity="center_horizontal"
+			android:visibility="gone"> 
+			
+		    <ImageView 
+		        android:id="@+id/iv_auto_tender_bg_icon"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="45dp"
+		        android:src="@drawable/mine_auto_tender_null"/>
+		    
+		    <TextView 
+		        style="@style/AutoTender.GrayTextView"
+		        android:layout_marginTop="27dp"
+		        android:text="@string/mine_auto_tender_null_text"
+		        android:textSize="16sp"
+		        android:textColor="#CCCDCD"/>
+		    
+		    <TextView 
+		        style="@style/AutoTender.GrayTextView"
+		        android:text="@string/mine_auto_tender_null_text_tishi"
+		        android:textSize="16sp"
+		        android:textColor="#CCCDCD"/>
+		</LinearLayout> 
+        
+        <com.beyondsoft.ep2p.view.swipemenulistview.SwipeMenuListView
+            android:id="@+id/auto_tender_lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:layout_weight="1"
+            android:background="@color/e_progressbar_bg_null" />
+    </FrameLayout>
+
+</LinearLayout>

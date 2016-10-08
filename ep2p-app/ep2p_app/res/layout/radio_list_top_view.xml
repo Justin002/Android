@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/radio_list_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#848488" >
+
+    <FrameLayout
+        android:id="@+id/blur_view"
+        android:layout_width="match_parent"
+        android:layout_height="203dp" >
+
+        <ImageView
+            android:id="@+id/cover_bg_iv"
+            android:layout_width="match_parent"
+            android:layout_height="203dp"
+            android:tag=""
+            android:scaleType="centerCrop"/>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="25dp"
+        android:paddingTop="73dp" >
+
+        <LinearLayout
+            android:id="@+id/first_item_rl"
+            android:layout_width="match_parent"
+            android:layout_height="105dp"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" >
+
+            <RelativeLayout
+                android:id="@+id/img_icon_rl"
+                android:layout_width="105dp"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:id="@+id/cover_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:tag=""
+                    android:src="@drawable/radio_default_big" />
+
+                <ImageView
+                    android:id="@+id/img_icon_play"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginRight="7dp"
+                    android:src="@drawable/discover_station_list_pause_small" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/pinglun_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/radio_list_title_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="歌曲"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_text_h" />
+
+                    <TextView
+                        android:id="@+id/create_time_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="2015-12-24"
+                        android:textColor="@color/text_grey_color"
+                        android:textSize="@dimen/font_text_lmm" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal"
+                    android:paddingBottom="6dp" >
+
+                    <TextView
+                        android:id="@+id/radio_listen_num_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/discover_w_tingzhong"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
+                        android:text="1332人"
+                        android:textColor="@color/text_grey_color"
+                        android:textSize="@dimen/font_text_lmm" />
+
+                    <TextView
+                        android:id="@+id/favour_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:drawableLeft="@drawable/discover_w_zhan"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
+                        android:text="453人"
+                        android:textColor="@color/text_grey_color"
+                        android:textSize="@dimen/font_text_lmm" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

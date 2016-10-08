@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_layout" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/ll_no_bank_card"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/dis_r_more_normal"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" 
+            android:visibility="invisible"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="88dip"
+                android:src="@drawable/icon_no_bank_card" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/XHSpace"
+                android:text="@string/never_add_bank_card"
+                android:textColor="@color/font_gray"
+                android:textSize="@dimen/font_btn_lll" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/nomalSpace"
+                android:text="@string/bank_card_no_change"
+                android:textColor="@color/e_text_bg_huise_black"
+                android:textSize="@dimen/font_text_lm" />
+
+            <Button
+                android:id="@+id/bt_go_add_bank_card"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_marginLeft="40dip"
+                android:layout_marginRight="40dip"
+                android:layout_marginTop="45dip"
+                android:background="@drawable/shape_button_bg_selector"
+                android:gravity="center"
+                android:text="@string/go_add_bank_card"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_text_h" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_bank_card"
+            android:layout_width="fill_parent"
+            android:layout_height="150dip"
+            android:layout_margin="@dimen/XXHSpace"
+            android:background="@drawable/bank_card_bg"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/HSpace2"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/HSpace" >
+
+                <ImageView
+                    android:id="@+id/iv_bank_belong_icon"
+                    android:layout_width="24dip"
+                    android:layout_height="24dip"
+                    android:layout_margin="@dimen/nomalSpace"
+                    android:src="@drawable/icon_construction_bank" />
+
+                <TextView
+                    android:id="@+id/tv_bank_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/HSpace"
+                    android:text="中国建设银行"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_btn_lll" />
+
+                <View
+                    android:layout_width="0dip"
+                    android:layout_height="1dip"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/tv_quick_payment"
+                    android:layout_width="55dip"
+                    android:layout_height="17.5dip"
+                    android:layout_margin="@dimen/nomalSpace"
+                    android:background="@drawable/shape_button_bg_light_blue_color"
+                    android:gravity="center"
+                    android:text="@string/quick_top_up"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_text_l" 
+                   
+                    />
+
+                <TextView
+                    android:id="@+id/tv_is_withdrawals"
+                    android:layout_width="55dip"
+                    android:layout_height="17.5dip"
+                    android:layout_marginLeft="@dimen/nomalSpace"
+                    android:layout_marginRight="@dimen/HSpace2"
+                    android:background="@drawable/shape_button_bg_blue"
+                    android:gravity="center"
+                    android:text="@string/can_withdrawal"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_text_l"
+                     />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="@dimen/HSpace"
+                android:layout_marginRight="@dimen/HSpace2"
+                android:background="@color/light_gray_color" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_bank_card_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:text="***"
+                    android:textColor="@color/e_text_shtz_top"
+                    android:textSize="@dimen/font_title_m" />
+
+                <TextView
+                    android:id="@+id/tv_bank_card_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/MSpace"
+                    android:layout_gravity="bottom"
+                    android:text="****"
+                    android:textColor="@color/e_text_shtz_top"
+                    android:textSize="@dimen/font_title_m" />
+
+                <TextView
+                    android:id="@+id/tv_bank_card_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/MSpace"
+                    android:layout_gravity="bottom"
+                    android:text="****"
+                    android:textColor="@color/e_text_shtz_top"
+                    android:textSize="@dimen/font_title_m" />
+
+                <TextView
+                    android:id="@+id/tv_bank_card_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/MSpace"
+                    android:layout_gravity="bottom"
+                    android:text="2234"
+                    android:textColor="@color/e_text_shtz_top"
+                    android:textSize="@dimen/font_title_m" />
+            </LinearLayout>
+            
+                <ImageView 
+                    android:id="@+id/mine_bankcard_notice"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/discover_new_noice"/>
+            
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/e_main_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        layout="@layout/title_layout" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_line"
+        android:background="#bbbbbb" />
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+        >
+        
+        <include 
+            android:id="@+id/ll_wifi_off"
+            layout="@layout/wifi_off_layout"
+            android:visibility="gone"/>
+        
+        <include 
+            android:id="@+id/ll_null_data"
+            layout="@layout/null_data_layout"
+            android:visibility="gone"/>
+    
+	    <com.handmark.pulltorefresh.library.PullToRefreshListView
+	        android:id="@+id/trading_list_rl"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:fadingEdge="none"
+	        android:cacheColorHint="#00000000"
+	        android:dividerHeight="1dp"
+	        android:fastScrollEnabled="false"
+	        android:footerDividersEnabled="false"
+	        android:headerDividersEnabled="false"
+	        android:smoothScrollbar="true"
+	        android:visibility="visible" />
+
+    </FrameLayout>
+</LinearLayout>

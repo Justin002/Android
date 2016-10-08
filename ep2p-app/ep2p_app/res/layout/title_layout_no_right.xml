@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/title_height"
+    android:background="@color/e_main_bg_title" >
+
+    <ImageView
+        android:id="@+id/title_left_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:paddingLeft="@dimen/title_left_padding"
+        android:paddingRight="@dimen/title_left_padding"
+        android:src="@drawable/back_btn" />
+
+    <TextView
+        android:id="@+id/title_content_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Title"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_btn_mm" />
+
+    <ImageView
+        android:id="@+id/title_content_im"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:background="@drawable/page_img_title_righ_vip"
+         android:layout_marginRight="@dimen/title_left_padding"
+        android:textSize="@dimen/font_text_h" />
+    <TextView
+        android:id="@+id/title_text_sure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:text="@string/txt_bn_sure"
+         android:textColor="@color/white"
+         android:visibility="gone"
+         android:layout_marginRight="@dimen/title_left_padding"
+        android:textSize="@dimen/font_text_h" />
+    
+
+    <!--
+           <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_line"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line_grey" />
+    -->
+
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+   android:orientation="vertical"
+    >
+
+  
+
+    <TextView
+        android:id="@+id/tv_photos"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_selector_corner_head"
+        android:gravity="center"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:text="相册"
+        android:textColor="@color/font_blue"
+        android:textSize="16sp" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+         android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#ebebeb" />
+
+    <TextView
+        android:id="@+id/tv_pick_photo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_selector_corner_bottom"
+        android:gravity="center"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:text="拍照"
+         android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:textColor="@color/font_blue"
+        android:textSize="16sp" />
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"
+        android:background="#ebebeb" />
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_selector_corner_all"
+        android:gravity="center"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:text="取消"
+         android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/font_blue"
+        android:textSize="16sp" />
+
+</LinearLayout>

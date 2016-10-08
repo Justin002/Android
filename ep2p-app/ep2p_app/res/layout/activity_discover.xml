@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_layout_right_image_dis" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/radio_station_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_height"
+                android:background="@color/white" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/discover_radio_huatong"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:padding="10dip"
+                    android:text="@string/dis_e_station"
+                    android:textColor="@color/e_text_bg_black"
+                    android:textSize="@dimen/sp_16" />
+
+                <Button
+                    android:id="@+id/radio_more_bt"
+                    android:layout_width="58dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:drawableRight="@drawable/discover_into_image"
+                    android:gravity="center_vertical"
+                    android:padding="10dip"
+                    android:text="@string/mine_more"
+                    android:textColor="@color/e_text_bg_huise_black"
+                    android:textSize="@dimen/font_text_lmm" />
+            </RelativeLayout>
+
+            <com.beyondsoft.ep2p.view.HorizontalListView
+                android:id="@+id/imgList"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="@color/white" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/title_line"
+                    android:background="@color/dis_r_main_line_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/e_receive_redenvelope_tv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/dis_redbag_tv"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingBottom="20dp"
+                        android:paddingTop="20dp" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp" >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/discover_redbag_image" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="@string/e_receive_redenvelope"
+                            android:textColor="@color/dis_ninegrid_tv"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="@string/dis_e_jubao"
+                            android:textColor="@color/e_text_bg_huise_black"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <!-- <TextView -->
+                    <!-- android:id="@+id/e_receive_redenvelope_tv" -->
+                    <!-- android:background="@drawable/dis_redbag_tv" -->
+                    <!-- android:layout_width="0dp" -->
+                    <!-- android:layout_height="wrap_content" -->
+                    <!-- android:layout_weight="1" -->
+                    <!-- android:drawablePadding="5dp" -->
+                    <!-- android:drawableTop="@drawable/discover_redbag_image" -->
+                    <!-- android:gravity="center_horizontal" -->
+                    <!-- android:padding="20dip" -->
+                    <!-- android:text="@string/e_receive_redenvelope" -->
+                    <!-- android:textColor="#2c3e50" /> -->
+
+                    <View
+                        android:layout_width="@dimen/title_line"
+                        android:layout_height="match_parent"
+                        android:background="@color/dis_r_main_line_gray" />
+
+                    <!-- <TextView -->
+                    <!-- android:id="@+id/e_coupon_tv" -->
+                    <!-- android:layout_width="0dp" -->
+                    <!-- android:layout_height="wrap_content" -->
+                    <!-- android:layout_weight="1" -->
+                    <!-- android:drawablePadding="5dp" -->
+                    <!-- android:drawableTop="@drawable/discover_addrate" -->
+                    <!-- android:gravity="center_horizontal" -->
+                    <!-- android:padding="20dip" -->
+                    <!-- android:text="@string/e_coupon" -->
+                    <!-- android:textColor="#2c3e50" /> -->
+
+                    <LinearLayout
+                        android:id="@+id/e_coupon_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/dis_redbag_tv"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingBottom="20dp"
+                        android:paddingTop="20dp" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp" >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/discover_addrate" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="@string/e_coupon"
+                            android:textColor="@color/dis_ninegrid_tv"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="中秋百万加息券狂送"
+                            android:textColor="@color/e_text_bg_huise_black"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="@dimen/title_line"
+                        android:layout_height="match_parent"
+                        android:background="@color/dis_r_main_line_gray" />
+
+                    <!-- <TextView -->
+                    <!-- android:id="@+id/e_community_tv" -->
+                    <!-- android:layout_width="0dp" -->
+                    <!-- android:layout_height="wrap_content" -->
+                    <!-- android:layout_weight="1" -->
+                    <!-- android:drawablePadding="5dp" -->
+                    <!-- android:drawableTop="@drawable/discover_community" -->
+                    <!-- android:gravity="center_horizontal" -->
+                    <!-- android:padding="20dip" -->
+                    <!-- android:text="@string/e_community" -->
+                    <!-- android:textColor="#2c3e50" /> -->
+
+                    <LinearLayout
+                        android:id="@+id/e_community_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/dis_redbag_tv"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingBottom="20dp"
+                        android:paddingTop="20dp" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp" >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/discover_community" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="@string/e_community"
+                            android:textColor="@color/dis_ninegrid_tv"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="独乐乐不如众乐乐"
+                            android:textColor="@color/e_text_bg_huise_black"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/title_line"
+                    android:background="@color/dis_r_main_line_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <!-- <TextView -->
+                    <!-- android:id="@+id/e_investment_ranking_tv" -->
+                    <!-- android:layout_width="0dp" -->
+                    <!-- android:layout_height="wrap_content" -->
+                    <!-- android:layout_weight="1" -->
+                    <!-- android:drawablePadding="5dp" -->
+                    <!-- android:drawableTop="@drawable/discover_invest_ranking" -->
+                    <!-- android:gravity="center_horizontal" -->
+                    <!-- android:padding="20dip" -->
+                    <!-- android:text="@string/e_investment_ranking" -->
+                    <!-- android:textColor="#2c3e50" /> -->
+
+                    <LinearLayout
+                        android:id="@+id/e_investment_ranking_tv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/dis_redbag_tv"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingBottom="20dp"
+                        android:paddingTop="20dp" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp" >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/discover_invest_ranking" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="@string/e_investment_ranking"
+                            android:textColor="@color/dis_ninegrid_tv"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="  "
+                            android:textColor="@color/e_text_bg_huise_black"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="@dimen/title_line"
+                        android:layout_height="match_parent"
+                        android:background="@color/dis_r_main_line_gray" />
+
+                    <!-- <TextView -->
+                    <!-- android:id="@+id/e_income_caculator_tv" -->
+                    <!-- android:layout_width="0dp" -->
+                    <!-- android:layout_height="wrap_content" -->
+                    <!-- android:layout_weight="1" -->
+                    <!-- android:drawablePadding="5dp" -->
+                    <!-- android:drawableTop="@drawable/discover_income_caculator" -->
+                    <!-- android:gravity="center_horizontal" -->
+                    <!-- android:padding="20dip" -->
+                    <!-- android:text="@string/e_income_caculator" -->
+                    <!-- android:textColor="#535353" /> -->
+
+                    <LinearLayout
+                        android:id="@+id/e_income_caculator_tv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/dis_redbag_tv"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingBottom="20dp"
+                        android:paddingTop="20dp" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp" >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/discover_income_caculator" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="@string/e_income_caculator"
+                            android:textColor="@color/dis_ninegrid_tv"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="  "
+                            android:textColor="@color/e_text_bg_huise_black"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="@dimen/title_line"
+                        android:layout_height="match_parent"
+                        android:background="@color/dis_r_main_line_gray" />
+
+                    <!-- <TextView -->
+                    <!-- android:id="@+id/e_newer_novice_tv" -->
+                    <!-- android:layout_width="0dp" -->
+                    <!-- android:layout_height="wrap_content" -->
+                    <!-- android:layout_weight="1" -->
+                    <!-- android:drawablePadding="5dp" -->
+                    <!-- android:drawableTop="@drawable/discover_new_noice" -->
+                    <!-- android:gravity="center_horizontal" -->
+                    <!-- android:padding="20dip" -->
+                    <!-- android:text="@string/e_newer_novice" -->
+                    <!-- android:textColor="#2c3e50" /> -->
+
+                    <LinearLayout
+                        android:id="@+id/e_newer_novice_tv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/dis_redbag_tv"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingBottom="20dp"
+                        android:paddingTop="20dp" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp" >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/discover_new_noice" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="@string/e_newer_novice"
+                            android:textColor="@color/dis_ninegrid_tv"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="  "
+                            android:textColor="@color/e_text_bg_huise_black"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/title_line"
+                    android:background="@color/dis_r_main_line_gray" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

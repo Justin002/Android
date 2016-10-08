@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/e_main_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="15dp" 
+        android:layout_marginTop="15dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/e_img_sbtz_03"
+            android:drawablePadding="10dp"
+            android:padding="5dp"
+            android:text="@string/txt_borrower_basic_information"
+            android:textColor="@color/e_text_shtz_top"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/tv_borrower_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/nomalSpace"
+                android:text="@string/txt_borrower_phone"
+                android:textColor="@color/e_text_shtz_buttom" />
+
+                <TextView
+                android:id="@+id/tv_borrower_name"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"       
+                android:text="@string/txt_borrower_name"
+                android:textColor="@color/e_text_shtz_buttom" />
+            
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/nomalSpace"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/tv_borrower_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/nomalSpace"
+                android:text="@string/txt_borrower_sex"
+                android:textColor="@color/e_text_shtz_buttom" />
+
+            <TextView
+                android:id="@+id/tv_borrower_marital"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"    
+                android:text="@string/txt_borrower_marital"
+                android:textColor="@color/e_text_shtz_buttom" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/tv_borrower_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/nomalSpace"
+                android:text="@string/txt_borrower_age"
+                android:textColor="@color/e_text_shtz_buttom" />
+
+            <TextView
+                android:id="@+id/tv_borrower_hj"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"    
+                android:text="@string/txt_borrower_hj"
+                android:textColor="@color/e_text_shtz_buttom" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_line"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/page_img_xian_03" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/e_img_sbtz2_03"
+            android:drawablePadding="10dp"
+            android:padding="5dp"
+            android:text="@string/txt_tz_project_information"
+            android:textColor="@color/e_text_shtz_top"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_borrower_yt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:padding="5dp"
+            android:text="@string/txt_borrower_yt"
+            android:textColor="@color/e_text_shtz_buttom" />
+
+        <TextView
+            android:id="@+id/tv_borrower_ly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:padding="5dp"
+            android:text="@string/txt_borrower_ly"
+            android:textColor="@color/e_text_shtz_buttom" />
+
+        <TextView
+            android:id="@+id/tv_borrower_dy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:padding="5dp"
+            android:text="@string/txt_borrower_dy"
+            android:textColor="@color/e_text_shtz_buttom" />
+    </LinearLayout>
+
+</LinearLayout>

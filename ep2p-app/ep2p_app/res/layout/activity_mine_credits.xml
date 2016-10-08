@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_layout_no_right" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mine_login_top_height"
+        android:background="@color/e_main_bg_title" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/head_padding_top"
+            android:layout_marginLeft="@dimen/head_padding_top"
+            android:layout_marginRight="@dimen/head_padding_top"
+            android:layout_marginTop="@dimen/head_padding_top"
+            android:background="@drawable/credist_background"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#999999"
+                android:drawableRight="@drawable/right_btn"
+                android:text="当前积分" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_line"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/line_grey_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/credits_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="12dp"
+                    android:text="1234"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/font_title_h" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="14dp"
+                    android:text="分"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/font_btn_lll" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/look_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:textColor="#999999"
+                android:drawableRight="@drawable/right_btn"
+                android:text="查看明细" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#bdc3c7"
+        android:text="@string/credits_change" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_line"
+        android:layout_marginTop="10dp"
+        android:background="@color/line_grey_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/vip_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="8dp"
+            android:drawableTop="@drawable/vip_icon"
+            android:gravity="center_horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="20dp"
+            android:background="@drawable/item_list_item_bg_selector"
+            android:text="@string/credits_vip"
+            android:textColor="@color/text_black" />
+
+        <View
+            android:layout_width="@dimen/title_line"
+            android:layout_height="wrap_content"
+            android:background="@color/line_grey_color" />
+
+        <TextView
+            android:id="@+id/phone_bill_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="8dp"
+            android:drawableTop="@drawable/phone_icon"
+            android:gravity="center_horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="20dp"
+             android:background="@drawable/item_list_item_bg_selector"
+            android:text="@string/credits_phone_bill"
+            android:textColor="@color/text_black" />
+
+        <View
+            android:layout_width="@dimen/title_line"
+            android:layout_height="wrap_content"
+            android:background="@color/line_grey_color" />
+
+        <TextView
+            android:id="@+id/ticket_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="8dp"
+            android:drawableTop="@drawable/add_icon"
+            android:gravity="center_horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="20dp"
+             android:background="@drawable/item_list_item_bg_selector"
+            android:text="@string/credits_ticket"
+            android:textColor="@color/text_black" />
+
+        <View
+            android:layout_width="@dimen/title_line"
+            android:layout_height="wrap_content"
+            android:background="@color/line_grey_color" />
+
+        <TextView
+            android:id="@+id/cash_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="8dp"
+            android:drawableTop="@drawable/carsh_icon"
+            android:gravity="center_horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="20dp"
+             android:background="@drawable/item_list_item_bg_selector"
+            android:text="@string/credits_cash"
+            android:textColor="@color/text_black" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_line"
+        android:background="@color/line_grey" />
+
+</LinearLayout>

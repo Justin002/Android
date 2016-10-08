@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_list_item_bg_selector"
+    android:paddingLeft="@dimen/dp_12"
+    android:paddingRight="@dimen/title_left_padding" >
+
+    <RelativeLayout
+        android:id="@+id/top_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <ImageView
+            android:id="@+id/pinglun_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/discover_p_head" />
+
+        <LinearLayout
+            android:id="@+id/pinglun_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/pinglun_img"
+            android:layout_alignTop="@+id/pinglun_img"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/pinglun_img"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/pinglun_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="李**"
+                android:textColor="@color/text_black_color"
+                android:textSize="@dimen/font_text_m" />
+
+            <TextView
+                android:id="@+id/pinglun_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="01-16 10:50:20"
+                android:textColor="@color/e_text_bg_huise_black"
+                android:textSize="@dimen/font_text_m" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/e_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="8.00元"
+            android:textSize="@dimen/font_text_h"
+            android:textColor="@color/text_black_color" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/top_rl"
+        android:background="@color/dis_redtail_line" />
+
+</RelativeLayout>

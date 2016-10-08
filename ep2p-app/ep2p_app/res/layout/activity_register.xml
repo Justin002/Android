@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/e_main_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <include layout="@layout/layout_register_jd_top" />
+
+        <TextView
+            android:id="@+id/tv_text_bhint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/nomalSpace"
+            android:layout_marginTop="@dimen/HSpace"
+            android:gravity="center_horizontal"
+            android:text="@string/txt_register_hint"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_btn_lll" />
+
+        <Button
+            android:id="@+id/bn_register"
+            android:layout_width="match_parent"
+            android:layout_height="41dip"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bn_shape"
+            android:gravity="center"
+            android:text="@string/txt_register_button"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_btn_lll" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_line"
+        android:background="@color/e_style_hxian" />
+    <ListView
+        android:id="@+id/listview_other_recommend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:dividerHeight="5dp"
+        android:listSelector="@drawable/item_list_item_bg_selector" />
+
+</LinearLayout>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/e_img_zc_bg_023" >
+
+    <include
+        android:id="@+id/il_include"
+        layout="@layout/title_layout" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/il_include"
+        android:orientation="vertical"
+        android:paddingTop="64dip" >
+
+        <com.beyondsoft.ep2p.view.LineEditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_marginLeft="@dimen/HSpace"
+            android:layout_marginRight="@dimen/HSpace"
+            android:background="@null"
+            android:hint="@string/txt_input_phone_hint1"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="#8bbfe2" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/HSpace"
+            android:layout_marginRight="@dimen/HSpace" >
+
+            <com.beyondsoft.ep2p.view.LineEditText
+                android:id="@+id/et_passwrod"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:background="@null"
+                android:hint="@string/txt_input_passwrod_hint4"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:password="true"
+                android:textColor="@color/white"
+                android:textColorHint="#8bbfe2" />
+
+            <ImageButton
+                android:id="@+id/ib_mw_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="6dp"
+                android:background="@drawable/password_switch"
+                android:contentDescription="@string/app_name" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/HSpace"
+            android:layout_marginRight="@dimen/HSpace" >
+
+            <EditText
+                android:id="@+id/et_phones_yzm"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:background="@null"
+                android:hint="@string/txt_input_phone_hint2"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="#8bbfe2" />
+
+            <TextView
+                android:id="@+id/tv_gety_yzm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/e_news_userzc_03"
+                android:drawablePadding="15dp"
+                android:text="@string/txt_input_phone_hint3"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout android:id="@+id/rl_layout_dx"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:background="#2980b9"
+            android:paddingLeft="@dimen/HSpace"
+            android:paddingRight="@dimen/HSpace" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:padding="10dp"
+                android:text="没收到短信? 使用语音验证码"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/bn_luang_yzm"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/mine_bn_shape_bg3"
+                android:enabled="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="获取语音验证码"
+                android:textColor="@color/e_button_bg"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_line"
+            android:layout_marginLeft="@dimen/HSpace"
+            android:layout_marginRight="@dimen/HSpace"
+            android:background="@color/white"
+            android:padding="10dp" />
+
+        <com.beyondsoft.ep2p.view.LineEditText
+            android:id="@+id/et_phones_yqm"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_marginLeft="@dimen/HSpace"
+            android:layout_marginRight="@dimen/HSpace"
+            android:background="@null"
+            android:hint="@string/txt_input_phone_yq2"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="#8bbfe2" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bn_finish"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dip"
+        android:background="@drawable/mine_bn_shape_bg3"
+        android:enabled="false"
+        android:gravity="center"
+        android:text="@string/txt_register_ok2"
+        android:textColor="@color/e_button_bg"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bn_finish"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:button="@drawable/zc_checkbox_selector"
+            android:checked="true"
+            android:text="@string/txt_input_agree"
+            android:textColor="#9ac8e7"
+            android:textSize="@dimen/font_btn_0" />
+
+        <TextView
+            android:id="@+id/tv_reg_xy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_tv_service_agreement"
+            android:textColor="#9ac8e7"
+            android:textSize="@dimen/font_btn_0" />
+    </LinearLayout>
+
+</RelativeLayout>

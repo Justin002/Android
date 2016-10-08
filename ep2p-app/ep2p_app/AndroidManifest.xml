@@ -1,0 +1,698 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.beyondsoft.ep2p"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+    
+    <permission
+        android:name="com.beyondsoft.ep2p.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+    
+    <permission android:name="android.permission.BAIDU_LOCATION_SERVICE"/>
+<uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE"/>
+       
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+      
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+       
+    
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />    
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+	<uses-permission android:name="android.permission.READ_SMS" />   
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.READ_LOGS" />
+	<uses-permission android:name="android.permission.CALL_PHONE" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.GET_TASKS" />
+	<uses-permission android:name="android.permission.SET_DEBUG_APP" />
+	<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+	<uses-permission android:name="android.permission.GET_ACCOUNTS" />
+	<uses-permission android:name="android.permission.USE_CREDENTIALS" />
+	<uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="com.beyondsoft.ep2p.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    
+    <application
+        android:name=".ControllerApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name="com.beyondsoft.ep2p.activity.StartPageActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.beyondsoft.ep2p.activity.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.beyondsoft.ep2p.activity.LoginActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.beyondsoft.ep2p.activity.discover.InvestmentRankingActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.beyondsoft.ep2p.activity.discover.IncomeCaculatorActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.beyondsoft.ep2p.activity.discover.NewerNoviceActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.beyondsoft.ep2p.activity.discover.ReceiveRedenvelopeActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.beyondsoft.ep2p.activity.discover.ReceiveRedenvelopeDetailActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.beyondsoft.ep2p.activity.discover.GetAddRateRollActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.beyondsoft.ep2p.activity.discover.GetRollDetailActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.beyondsoft.ep2p.activity.discover.RatioStationListActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.beyondsoft.ep2p.activity.discover.RatioStationPlayActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.beyondsoft.ep2p.activity.discover.ECommunityActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.beyondsoft.ep2p.activity.discover.ECommunitySecondActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.beyondsoft.ep2p.activity.discover.CommunityMyActivity"
+            android:screenOrientation="portrait">
+        </activity>
+         <activity
+            android:name="com.beyondsoft.ep2p.activity.discover.ECommunitySendCardActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.beyondsoft.ep2p.activity.discover.ECommunityCardDetailActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <service android:name="com.beyondsoft.ep2p.activity.discover.service.MediaPlayerService" >
+        </service>
+
+        <!-- 注册 -->
+        <activity
+            android:name=".activity.home.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <!-- 系统公告 -->
+        <activity
+            android:name=".activity.home.NoticeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <!-- 消息中心 -->
+         <activity
+            android:name=".activity.home.NewsActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <!-- 理财类型type -->
+        <activity
+            android:name=".activity.home.CFPTypeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <!-- 新用户注册 -->
+        <activity
+            android:name=".activity.home.NewUserRegisterActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <!--注册页的产品详情-->
+        <activity
+            android:name=".activity.home.ProductDetailsActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <!-- 体验标详情页 -->
+        <activity
+            android:name=".activity.home.ExperienceDetailsActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <!-- 体验金  #TODO adjustPan 控制软键盘不把ui顶上去 -->
+        <activity
+            android:name=".activity.home.ExperienceActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+        </activity>
+        <!-- 加息券  #TODO adjustPan 控制软键盘不把ui顶上去 android:launchMode="singleTask"-->
+        <activity
+            android:name=".activity.home.RaiseInterestActivity"
+            
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+        </activity>
+        <!-- 加入完成 -->
+        <activity
+            android:name=".activity.home.JoinSucceedActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <!-- 投入成功 -->
+        <activity
+            android:name=".activity.home.InvestSucceedActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <!-- 投入成功 [散标投资]-->
+        <activity
+            android:name=".activity.home.SBTZInvestSucceedActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <!-- 投入成功 [转让 债权]-->
+        <activity
+            android:name=".activity.home.ZRInvestSucceedActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <!-- 首页的产品详情 -->
+        <activity
+            android:name=".activity.home.HomeProductDetailsActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <!-- 计算器 -->
+        <activity
+            android:name=".activity.home.EarningsCalculatorActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <!-- 新手标详情====立即投标页面-->
+        <activity
+            android:name=".activity.home.ImmediatelyInvestActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <!-- 实名认证-->
+        <activity
+            android:name=".activity.home.AuthenticationActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <!-- 债权详情-->
+        <activity
+            android:name=".activity.home.CreditorRightsDetailsActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <!-- 购买成功 -->
+        <activity
+            android:name=".activity.home.BuySucceedActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <!-- 公共详情 -->
+        <activity
+            android:name=".activity.home.NoticeContextActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <!-- 服务协议类 -->
+        <activity
+            android:name=".activity.EServicerAgreementActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <!-- 查看图片 -->
+        <activity android:name="com.beyondsoft.ep2p.activity.home.ImagePagerActivity" />
+        <activity
+            android:name="com.beyondsoft.ep2p.activity.mine.activity.InvestmentedProjectActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.beyondsoft.ep2p.activity.mine.activity.ProjectDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.beyondsoft.ep2p.activity.mine.activity.WaittingRecieveQueryActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.beyondsoft.ep2p.activity.mine.activity.WaittingRecieveDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.beyondsoft.ep2p.activity.mine.activity.CreditorRightsTransfActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.beyondsoft.ep2p.activity.mine.activity.CreditorRightsTransfSuccessActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>   
+         <activity
+            android:name="com.beyondsoft.ep2p.activity.mine.activity.MyCreditorRightsActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>  
+         <activity
+            android:name="com.beyondsoft.ep2p.activity.mine.activity.CreditorRightsDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.beyondsoft.ep2p.activity.mine.activity.ReimbursementActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden"
+             >
+        </activity>  
+        <activity
+            android:name="com.beyondsoft.ep2p.activity.mine.activity.ReimbursementWaitDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>  
+        <activity
+            android:name="com.beyondsoft.ep2p.activity.mine.activity.ReimbursementSuccessActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>  
+        <activity
+            android:name="com.beyondsoft.ep2p.activity.mine.activity.RechargeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>  
+        <activity
+            android:name="com.beyondsoft.ep2p.activity.mine.activity.RechargeTimesActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>  
+        <activity
+            android:name="com.beyondsoft.ep2p.activity.mine.activity.SelectBankCardActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>  
+        <activity
+            android:name="com.beyondsoft.ep2p.activity.mine.activity.AddBankCardActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>  
+        <activity
+            android:name="com.beyondsoft.ep2p.activity.mine.activity.WithdrawalActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>  
+        <activity
+            android:name="com.beyondsoft.ep2p.activity.mine.activity.SelectBankTypeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>  
+        <activity
+            android:name="com.beyondsoft.ep2p.activity.mine.activity.SelectRegionActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>  
+        <activity
+            android:name="com.beyondsoft.ep2p.activity.mine.activity.NonMainlandAuthActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>  
+        <activity
+            android:name="com.beyondsoft.ep2p.activity.mine.activity.AssetStatisticsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>  
+        <activity
+            android:name="com.beyondsoft.ep2p.activity.mine.activity.BankCardValidationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>  
+        <activity
+            android:name="com.beyondsoft.ep2p.activity.mine.activity.WithdrawalValicationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>  
+        <activity
+            android:name="com.beyondsoft.ep2p.activity.SimpleWebActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>  
+         <activity android:name=".activity.mine.activity.MoreActivity" android:screenOrientation="portrait" />
+         <activity android:name=".activity.mine.activity.AboutActivity" android:screenOrientation="portrait" />        
+         <activity android:name=".activity.mine.activity.FeedbackActivity" android:screenOrientation="portrait" />
+         <activity android:name=".activity.mine.activity.InvitePrizeActivity" android:theme="@android:style/Theme.Black.NoTitleBar" android:screenOrientation="portrait" />
+         <activity android:name=".activity.mine.activity.MyInviteListActivity" android:screenOrientation="portrait" />
+         <activity android:name=".activity.mine.activity.SecurityCenterActivity" android:screenOrientation="portrait" />
+         <activity android:name=".activity.mine.activity.RealNameAuthActivity" android:screenOrientation="portrait" />
+         <activity android:name=".activity.mine.activity.PhoneBoundActivity" android:screenOrientation="portrait" />
+         <activity android:name=".activity.mine.activity.PhoneBoundAuthActivity" android:screenOrientation="portrait" />
+         <activity android:name=".activity.mine.activity.ModifyLoginPwdActivity" android:screenOrientation="portrait" />
+         <activity android:name=".activity.mine.activity.ResetLoginPwdActivity" android:screenOrientation="portrait" />
+         <activity android:name=".activity.mine.activity.ResetLoginPwdAuthActivity" android:screenOrientation="portrait" />
+         <activity android:name=".activity.mine.activity.ModifyPayPwdActivity" android:screenOrientation="portrait" />
+         <activity android:name=".activity.mine.activity.GesturePasswordActivity" android:screenOrientation="portrait" />
+         <activity android:name=".activity.mine.activity.CardPackageActivity" android:screenOrientation="portrait" />
+         <activity android:name=".activity.mine.activity.CreditsActivity" android:screenOrientation="portrait" />
+         <activity android:name=".activity.mine.activity.CreditTaskActivity" android:screenOrientation="portrait"  />
+         <activity android:name=".activity.mine.activity.VipActivity" android:screenOrientation="portrait" />
+         <activity android:name=".activity.mine.activity.PhoneBillExchangeActivity" android:screenOrientation="portrait" />
+         <activity android:name=".activity.mine.activity.TicketActivity" android:screenOrientation="portrait" />
+         <activity android:name=".activity.mine.activity.CashActivity" android:screenOrientation="portrait" />
+         <activity android:name=".activity.mine.activity.BankCardActivity" android:screenOrientation="portrait" android:launchMode="singleTask"/>
+         <activity android:name=".activity.mine.activity.PersonalInfomationActivity" android:screenOrientation="portrait" />
+         <activity android:name=".activity.mine.activity.ModifyUserNameActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+         <activity android:name=".activity.mine.activity.VipLevelActivity" android:screenOrientation="portrait" />
+         <activity android:name=".activity.mine.activity.TradingListActivity" android:screenOrientation="portrait" />
+         <activity android:name=".activity.mine.activity.AutoTenderActivity" android:screenOrientation="portrait" android:launchMode="singleTask"/>
+         <activity android:name=".activity.mine.activity.AutoTenderNullActivity" android:screenOrientation="portrait" android:launchMode="singleTask"/>
+         <activity android:name=".activity.mine.activity.AutoTenderAddMoneyActivity" android:screenOrientation="portrait"/>
+         <activity android:name=".activity.mine.activity.AutoTenderAddParameterActivity" android:screenOrientation="portrait"/>
+         <activity android:name=".activity.mine.activity.AutoTenderAddProjectActivity" android:screenOrientation="portrait"/>
+         <activity android:name=".activity.mine.activity.AutoTenderComplicMoneyActivity" android:screenOrientation="portrait"/>
+         <activity android:name=".activity.mine.activity.AutoTenderComplicParameterActivity" android:screenOrientation="portrait"/>
+         <activity android:name=".activity.mine.activity.AutoTenderComplicProjectActivity" android:screenOrientation="portrait"/>
+         <activity android:name=".activity.mine.activity.RechargeInstructionsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+         <activity android:name=".activity.mine.activity.RechargeMoneyActivity" android:screenOrientation="portrait"/>
+         <activity android:name=".activity.mine.activity.RechargeSuccessActivity" android:screenOrientation="portrait"/>
+         <activity android:name=".activity.mine.activity.SetPayAuthActivity" android:screenOrientation="portrait"></activity>
+         <activity android:name=".activity.mine.activity.SetPayNewAuthActivity"  android:screenOrientation="portrait"></activity>
+         <activity android:name=".activity.mine.activity.CreditsExplainActivity" android:screenOrientation="portrait"></activity>
+         <activity android:name=".activity.mine.activity.VipDetailSuccessActivity" android:screenOrientation="portrait"></activity>
+         <activity android:name=".activity.mine.activity.VipExchangeDetailActivity" android:screenOrientation="portrait"></activity>
+         <activity android:name=".activity.mine.activity.PhoneBillExchangeDetailActivity" android:screenOrientation="portrait"></activity>
+         <activity android:name=".activity.mine.activity.PhoneBillDetailSuccessActivity" android:screenOrientation="portrait"></activity>
+         <activity android:name=".activity.mine.activity.TicketDetailSuccessActivity" android:screenOrientation="portrait"></activity>
+         <activity android:name=".activity.mine.activity.TicketExchangeDetailActivity" android:screenOrientation="portrait"></activity>
+         <activity android:name=".activity.mine.activity.CashDetailSuccessActivity" android:screenOrientation="portrait"></activity>
+         <activity android:name=".activity.mine.activity.CashExchangeDetailActivity" android:screenOrientation="portrait"></activity>
+         <activity android:name=".activity.mine.activity.EnchashmentSuccessActivity" android:screenOrientation="portrait"></activity>
+         <activity android:name=".activity.mine.activity.BankAuthenticationActivity" android:screenOrientation="portrait"></activity>
+         <activity android:name=".activity.discover.RedFirstFinishActivity" android:screenOrientation="portrait"></activity>
+         <activity android:name=".activity.discover.RedResultFinishResultActivity" android:screenOrientation="portrait"></activity>
+         <activity android:name=".activity.mine.activity.ForgetPasswordActivity" android:screenOrientation="portrait"></activity>
+         <activity android:name=".activity.mine.activity.ForgetPasswordTypeTelActivity" android:screenOrientation="portrait"></activity>
+         <activity android:name=".activity.mine.activity.ModifyLoginPassWordActivity" android:screenOrientation="portrait"></activity>
+         <activity android:name=".activity.discover.RatioStationPlayByTestActivity"></activity>
+         <activity android:name=".activity.mine.activity.ValidateLoginPasswordActivity" android:screenOrientation="portrait"></activity>    
+    		
+         <!-- LLYT SDK START -->
+        <activity
+            android:name="com.yintong.secure.activity.BaseActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+
+        <service
+            android:name="com.yintong.secure.service.PayService"
+            android:exported="false" >
+        </service>
+        <!-- LLYT SDK END -->
+        <activity android:name=".activity.mine.activity.CreditorRightsTransfNextActivity">
+        </activity>
+        <activity android:name=".activity.mine.activity.ReimbursementForProfit"></activity>
+        <activity android:name=".activity.mine.activity.ReimbursementForAdvance"></activity>
+        <activity android:name=".activity.mine.activity.ReimbursementDoneDetailActivity"></activity>
+        <activity android:name=".activity.mine.activity.ReimbursementSuccessAllActivity"></activity>
+        <activity android:name=".activity.mine.activity.WaittingRecieveDoneDetailActivity"></activity>
+        
+        <!-- 友盟分享 -->
+        <activity
+            android:name="com.umeng.socialize.editorpage.ShareActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/Theme.UMDefault" />
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="56ca6b90e0f55a403e002a45" >
+        </meta-data>
+        
+        <!-- 微信分享 -->
+        <activity
+            android:name=".utils.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        
+        
+        <!-- 新浪微博 -->
+        <activity
+            android:name=".utils.WBShareActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> 
+		<activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustResize"
+            android:exported="false" >
+        </activity>
+        <service 
+            android:name="com.sina.weibo.sdk.net.DownloadService"
+            android:exported="false">
+        </service>
+        
+        
+        <!--QQ分享  -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent100424468" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        
+        
+        
+        <!-- 极光推送 -->
+        
+            <!-- Rich push 核心功能 since 2.0.6-->
+        <activity
+            android:name="cn.jpush.android.ui.PopWinActivity"
+            android:theme="@style/MyDialogStyle"
+            android:exported="false">
+        </activity>
+
+        <!-- Required SDK核心功能-->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.beyondsoft.ep2p" />
+            </intent-filter>
+        </activity>
+        <!-- Required  SDK核心功能-->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+    
+        
+        <!-- Required SDK 核心功能-->
+        <!-- 可配置android:process参数将PushService放在其他进程中 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <!-- since 1.8.0 option 可选项。用于同一设备中不同应用的JPush服务相互拉起的功能。 -->
+        <!-- 若不启用该功能可删除该组件，将不拉起其他应用也不能被其他应用拉起 -->
+        <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService" />
+                <category android:name="com.beyondsoft.ep2p" />
+            </intent-filter>
+
+        </service>
+        
+         <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" >
+                </action>
+            </intent-filter>
+        </service>
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="lpMqFsfBCjF9LajwkwuwPmXc"/>
+        
+        <!-- Required SDK核心功能-->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true"
+            android:exported="false">
+             <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />   <!--Required  显示通知栏 -->
+                <category android:name="com.beyondsoft.ep2p" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+             <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+   
+        </receiver>
+        
+        <!-- Required SDK核心功能-->
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" android:exported="false"/>
+        
+        <!-- User defined.  For test only  用户自定义的广播接收器-->
+        <receiver
+            android:name="com.beyondsoft.ep2p.utils.MyReceiver"
+            android:exported="false"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!--Required  用户注册SDK的intent-->
+                <action android:name="cn.jpush.android.intent.UNREGISTRATION" />  
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!--Required  用户接收SDK消息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!--Required  用户接收SDK通知栏信息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!--Required  用户打开自定义通知栏的intent-->
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" /> <!--Optional 用户接受Rich Push Javascript 回调函数的intent-->
+                <action android:name="cn.jpush.android.intent.CONNECTION" /><!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.beyondsoft.ep2p" />
+            </intent-filter>
+        </receiver>
+ 
+        
+        <!-- Required  . Enable it you can get statistics data with channel -->
+        <meta-data android:name="JPUSH_CHANNEL" android:value="developer-default"/>
+        <meta-data android:name="JPUSH_APPKEY" android:value="1ea340e8684c3b339f1fd424" /> <!--  </>值来自开发者平台取得的AppKey-->
+        <activity android:name=".activity.mine.activity.SelectLoactionActivity"></activity>
+        <activity android:name=".activity.mine.activity.SelecteCityActivity"></activity>
+        <activity android:name=".activity.discover.WebViewActivity"></activity>
+        <activity android:name=".activity.mine.activity.ProjectFinishedDetailActivity"></activity>
+
+
+</application>
+   
+
+</manifest>

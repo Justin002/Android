@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_black"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/HSpace2"
+    android:paddingRight="@dimen/HSpace2" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="180dip"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dip"
+            android:src="@drawable/creditright_transfer_image" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/HSpace"
+            android:text="@string/creditor_transfer_instruction"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_btn_ll" />
+    </LinearLayout>
+
+  
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/XHSpace"
+        android:text="@string/creditor_transfer_instruction_1"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_btn_lll" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/HSpace2"
+        android:text="@string/creditor_transfer_instruction_2"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_btn_lll" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/HSpace2"
+        android:text="@string/creditor_transfer_instruction_3"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_btn_lll" />
+
+    <View
+        android:layout_width="1dip"
+        android:layout_height="0dip"
+        android:layout_weight="1" />
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/HSpace"
+        android:scaleType="centerInside"
+        android:src="@drawable/icon_delete_big" />
+
+</LinearLayout>

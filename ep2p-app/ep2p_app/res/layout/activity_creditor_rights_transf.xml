@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical" >
+    <include layout="@layout/title_layout_creditortransfer" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/HSpace2"
+                android:background="@color/white"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/projectdetail"
+                  
+                    >
+                </ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+              android:gravity="center_vertical"
+               android:textSize="@dimen/font_text_h"
+                android:paddingLeft="@dimen/MSpace"
+                android:textColor="@color/dark_gray"
+                android:text="@string/project_info"
+                />
+              </LinearLayout>
+
+             <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/HSpace2"
+                    android:paddingRight="@dimen/HSpace2" >
+
+                 <ImageView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/item_line"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/HSpace"
+                        android:text="编号"
+                        android:textColor="@color/e_text_huise_buttom"
+                        android:textSize="@dimen/font_text_h" />
+
+                    <View
+                        android:layout_width="0dip"
+                        android:layout_height="1dip"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/tv_borrowCode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="D1601011"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/font_text_h" />
+                </LinearLayout>
+                
+             
+             
+               <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/HSpace2"
+                    android:paddingRight="@dimen/HSpace2" >
+
+                      <ImageView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/item_line"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/HSpace"
+                        android:text="投资金额"
+                        android:textColor="@color/e_text_huise_buttom"
+                        android:textSize="@dimen/font_text_h" />
+
+                    <View
+                        android:layout_width="0dip"
+                        android:layout_height="1dip"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/tv_investCapital"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="200000.00"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/font_text_h" />
+                </LinearLayout>
+               
+               <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/HSpace2"
+                    android:paddingRight="@dimen/HSpace2" >
+                    <ImageView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/item_line"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/HSpace"
+                        android:text="剩余/总期次"
+                        android:textColor="@color/e_text_huise_buttom"
+                        android:textSize="@dimen/font_text_h" />
+
+                    <View
+                        android:layout_width="0dip"
+                        android:layout_height="1dip"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/tv_qici"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="1/12"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/font_text_h" />
+                </LinearLayout>
+               
+               
+             
+               <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/HSpace2"
+                    android:paddingRight="@dimen/HSpace2" >
+
+                   <ImageView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/item_line"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/HSpace"
+                        android:text="已收本息"
+                        android:textColor="@color/e_text_huise_buttom"
+                        android:textSize="@dimen/font_text_h" />
+
+                    <View
+                        android:layout_width="0dip"
+                        android:layout_height="1dip"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/tv_alreadyBenxi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="170.00"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/font_text_h" />
+                </LinearLayout>
+                
+               
+             
+               <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/HSpace2"
+                    android:paddingRight="@dimen/HSpace2" >
+
+                   <ImageView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/item_line"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/HSpace"
+                        android:text="剩余本金"
+                        android:textColor="@color/e_text_huise_buttom"
+                        android:textSize="@dimen/font_text_h" />
+
+                    <View
+                        android:layout_width="0dip"
+                        android:layout_height="1dip"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/tv_surperCapital"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="19830.00"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/font_text_h" />
+                </LinearLayout>
+                
+             
+             
+               <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/HSpace2"
+                    android:paddingRight="@dimen/HSpace2" >
+
+                   <ImageView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/item_line"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/HSpace"
+                        android:text="当期至今利息"
+                        android:textColor="@color/e_text_huise_buttom"
+                        android:textSize="@dimen/font_text_h" />
+
+                    <View
+                        android:layout_width="0dip"
+                        android:layout_height="1dip"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/tv_currentInterest"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="50.00"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/font_text_h" />
+                </LinearLayout>
+                
+               
+             
+               <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/HSpace2"
+                    android:paddingRight="@dimen/HSpace2" >
+
+                   <ImageView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/item_line"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/HSpace"
+                        android:text="当期全部利息"
+                        android:textColor="@color/e_text_huise_buttom"
+                        android:textSize="@dimen/font_text_h" />
+
+                    <View
+                        android:layout_width="0dip"
+                        android:layout_height="1dip"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/tv_currentAllInterest"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="150.00"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/font_text_h" />
+                </LinearLayout>
+            
+
+                
+                
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="@color/line_grey"
+                android:layout_marginLeft="@dimen/HSpace2"
+                android:layout_marginRight="@dimen/HSpace2" />
+
+            
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/HSpace2"
+                android:background="@color/white"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/title_transfer_price"
+                  
+                    >
+                </ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+               android:textSize="@dimen/font_text_h"
+                android:paddingLeft="@dimen/MSpace"
+                android:textColor="@color/dark_gray"
+                android:text="转让价格"
+                />
+              </LinearLayout>
+
+           
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="55dp"
+                    android:layout_gravity="bottom"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/HSpace2"
+                    android:paddingRight="@dimen/HSpace2" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/china_yuan_symbol"
+                        android:textSize="@dimen/font_btn_x"
+                         />
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/et_creditright_transfer_price"
+                        android:background="@color/transparent"
+                        android:hint="请输入转让价格"
+                        android:cursorVisible="true"
+                        android:textCursorDrawable="@null"
+                        android:inputType="numberDecimal"
+                        android:paddingLeft="@dimen/nomalSpace"
+                        android:textColor="@color/dark"
+                        android:textSize="25sp" />
+
+                </LinearLayout>
+                <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="@color/line_grey"
+                android:layout_marginLeft="@dimen/HSpace2"
+                android:layout_marginRight="@dimen/HSpace2" />
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:gravity="center_vertical"
+                    android:background="@color/white"
+                    
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/HSpace2"
+                    android:paddingRight="@dimen/HSpace2" >
+                    <TextView
+                        android:id="@+id/tv_youxiaoqujian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="有效区间：￥10295.24 ~ ￥12986.12"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/font_text_l" />
+                     <View
+                        android:layout_width="0dip"
+                        android:layout_height="1dip"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:id="@+id/tv_maxValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="转让最高额"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/font_text_l" />
+                </LinearLayout>
+            </LinearLayout>
+         <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                   
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/HSpace2"
+                    android:paddingRight="@dimen/HSpace2" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        
+                        android:text="24小时内无人购买，系统将自动下架转让"
+                        android:textColor="@color/e_text_huise_buttom"
+                        android:textSize="@dimen/font_text_m" />
+
+                   
+
+                  
+                </LinearLayout>
+                
+         <!--    <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="@color/line_grey" />
+
+           
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                
+                android:padding="15dip"
+                android:lineSpacingMultiplier="1.5"
+                android:text="@string/transf_hint"
+                android:background="@color/white"
+                android:textColor="@color/e_text_shtz_buttom"
+                android:textSize="@dimen/font_text_lm" />
+
+            <View
+                android:layout_width="1dip"
+                android:layout_height="0dip"
+                android:layout_weight="1" /> -->
+
+           <!--  <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/XXHSpace"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/checkbox_selector"
+                    android:checked="true" />
+
+                <TextView
+                    android:id="@+id/tv_cerditor_rights_transf_agreement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/nomalSpace"
+                    android:text="@string/cerditor_rights_transf_agreement"
+                    android:textColor="@color/e_text_bg_huise_black"
+                    android:textSize="@dimen/font_text_lm" />
+            </LinearLayout> -->
+
+            <Button
+                android:id="@+id/bt_ensure_transf"
+                android:layout_width="fill_parent"
+                android:layout_height="44dip"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/mine_bn_shape_bg"
+                android:enabled="false"
+                android:text="下一步"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/e_main_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/il_iclude"
+        layout="@layout/title_layout" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_butoom_flag"
+        android:layout_below="@+id/il_iclude"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- 定义图表的占位符 -->
+
+            <include
+                layout="@layout/layout_product_details_top" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_line"
+                android:layout_marginTop="15dp"
+                android:background="@color/e_style_hxian" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/HSpace2" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/txt_tv_mode_repayment" />
+
+                <TextView
+                    android:id="@+id/tv_moderepayment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:text="按月等额本息还款"
+                    android:textColor="@color/e_text_bg_black" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_line"
+                android:background="@color/e_style_hxian" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/HSpace2" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/txt_tv_interest" />
+
+                <TextView
+                    android:id="@+id/tv_mode_interest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:text="投标即计息"
+                    android:textColor="@color/e_text_bg_black" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_line"
+                android:background="@color/e_style_hxian" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/HSpace2" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/txt_tv_guarantee" />
+
+                <TextView
+                    android:id="@+id/tv_mode_guarantee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:text="100%本息保障"
+                    android:textColor="@color/e_text_bg_black" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <SlidingDrawer
+            android:id="@+id/drawer1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:content="@+id/mycontent1"
+            android:handle="@+id/layout1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical" >
+                
+                <TextView
+                    android:id="@+id/myImage_heads"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/e_main_bg_title"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/myImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:drawablePadding="2dp"
+                    android:drawableTop="@drawable/e_img_ct_falg_11"
+                    android:text="@string/txt_tv_cd_check_more" />
+            </LinearLayout>
+
+            <include
+                android:id="@+id/mycontent1"
+                layout="@layout/layout_product_details_tab" />
+        </SlidingDrawer>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_butoom_flag"
+        android:layout_width="match_parent"
+        android:layout_height="49dip"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bn_calculator"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bn_sy_jsq_buttom_image" />
+
+        <Button
+            android:id="@+id/bn_immediately_tz"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="@color/e_button_bg"
+            android:text="@string/txt_tv_immediately"
+            android:textSize="@dimen/font_btn_mm"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

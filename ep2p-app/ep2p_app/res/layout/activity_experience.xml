@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/e_main_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/il_iclude"
+        layout="@layout/title_layout" />
+
+    <ListView
+        android:id="@+id/listview_experience"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bn_sy_ok"
+        android:layout_below="@+id/il_iclude"
+        android:layout_margin="10dp"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:dividerHeight="15dp" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bn_sy_ok"
+        android:layout_below="@+id/il_iclude"
+        layout="@layout/null_data_layout" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bn_sy_ok"
+        android:layout_below="@+id/il_iclude"
+        layout="@layout/wifi_off_layout" />
+
+    <Button
+        android:id="@+id/bn_sy_ok"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/blue"
+        android:text="@string/txt_bn_ok"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</RelativeLayout>

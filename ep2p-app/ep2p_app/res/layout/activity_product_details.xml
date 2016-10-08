@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/e_main_bg" >
+
+    <include
+        android:id="@+id/il_iclude"
+        layout="@layout/title_layout" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lll_layout"
+        android:layout_below="@+id/il_iclude" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- 定义图表的占位符 -->
+
+            <include layout="@layout/layout_product_details_top" />
+
+            <include layout="@layout/layout_product_details_buttom" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/lll_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bn_calculator"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bn_sy_jsq_buttom_image" />
+
+        <Button
+            android:id="@+id/bn_immediately_tz"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="@color/e_button_bg"
+            android:text="@string/txt_tv_immediately"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_btn_m" />
+    </LinearLayout>
+
+</RelativeLayout>

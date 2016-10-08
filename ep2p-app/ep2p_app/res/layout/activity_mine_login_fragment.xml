@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bg_height"
+        android:background="@color/e_main_bg_title" >
+
+        <View
+            android:id="@+id/view_top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height" />
+
+            <LinearLayout
+                android:id="@+id/ll_asset_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_top_layout"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical"
+                android:paddingBottom="27dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mine_total_assets"
+                    android:textColor="#7fffffff"
+                    android:textSize="@dimen/font_btn_lll" />
+
+                <TextView
+                    android:id="@+id/total_money_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥00.00"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_title_h" />
+
+                <TextView
+                    android:id="@+id/balance_money_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textColor="#ccffffff"
+                    android:textSize="@dimen/font_btn_lll" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_alignParentBottom="true" >
+
+                <View
+                    android:id="@+id/center_line"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true" />
+
+                <TextView
+                    android:id="@+id/top_up_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/center_line"
+                    android:background="@drawable/mine_bn_top_shape_bg"
+                    android:gravity="center"
+                    android:text="@string/mine_top_up"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_btn_ll" />
+
+                <TextView
+                    android:id="@+id/withdrawal_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/center_line"
+                    android:background="@drawable/mine_bn_top_shape_bg"
+                    android:gravity="center"
+                    android:text="@string/mine_carry_cash"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_btn_ll" />
+            </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/white"
+        android:paddingLeft="17dp"
+        android:paddingRight="17dp" >
+
+        <LinearLayout
+            android:id="@+id/card_package_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/card_package_icon" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mine_card"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/font_text_lmm" />
+
+                <TextView
+                    android:id="@+id/card_package_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:autoLink="phone"
+                    android:text="0"
+                    android:textColor="@color/mine_blue"
+                    android:textSize="@dimen/font_text_lmm" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/credits_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/credit_icon" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mine_credits"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/font_text_lmm" />
+
+                <TextView
+                    android:id="@+id/credit_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/mine_blue"
+                    android:textSize="@dimen/font_text_lmm" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bank_card_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bank_card_icon" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mine_bank_card"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/font_text_lmm" />
+
+                <TextView
+                    android:id="@+id/bank_card_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/mine_blue"
+                    android:textSize="@dimen/font_text_lmm" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

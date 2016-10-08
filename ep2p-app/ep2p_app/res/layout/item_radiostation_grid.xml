@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp" >
+
+    <RelativeLayout
+        android:id="@+id/img_icon_rl"
+        android:layout_width="144dp"
+        android:layout_height="144dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" >
+
+        <ImageView
+            android:id="@+id/img_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/discover_station_list_head_small" />
+
+        <ImageView
+            android:clickable="true"
+            android:id="@+id/img_icon_play"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerInParent="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/dis_statiion_list_play"
+            android:visibility="gone" />
+
+        <ImageView
+            android:clickable="true"
+            android:id="@+id/img_icon_pause"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerInParent="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/discover_station_list_pause_small"
+            android:visibility="visible" />
+         <TextView
+             android:id="@+id/img_icon_tingzhong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:drawableLeft="@drawable/discover_station_list_tingzhong"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:text="43625人"
+            android:textColor="@color/e_text_bg_black" />
+    </RelativeLayout>
+
+    <!-- android:background="@drawable/dis_imgae_bg_1" -->
+    <!-- android:clickable="true" -->
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/img_icon_rl"
+        android:layout_below="@+id/img_icon_rl"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:lines="2"
+        android:text="希腊危机幕" />
+
+</RelativeLayout>

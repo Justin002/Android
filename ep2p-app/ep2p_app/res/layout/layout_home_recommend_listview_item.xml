@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="125dip"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/dis_redbag_tv"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView android:id="@+id/tv_text_nhll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="12.00%"
+                    android:textColor="@color/e_text_bg_yellow"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/txt_tv_text_nhll"
+                    android:textColor="@color/e_text_bg_huise_black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical" >
+
+                <TextView android:id="@+id/tv_text_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="12月"
+                    android:textColor="@color/e_text_bg_yellow"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/txt_tv_deadline"
+                    android:textColor="@color/e_text_bg_huise_black" />
+            </LinearLayout>
+            
+            <LinearLayout android:id="@+id/ll_layout_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical" >
+
+                <TextView android:id="@+id/tv_text_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="50万"
+                    android:textColor="@color/e_text_bg_yellow"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/txt_tv_money_amount"
+                    android:textColor="@color/e_text_bg_huise_black" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="3" >
+
+                <TextView android:id="@+id/tv_join_buttons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/e_home_page_image_time_03"
+                    android:text="@string/txt_tv_money_amount_top_time"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="7dp"
+                    android:textSize="11sp"
+                    android:drawablePadding="5dp"
+                    android:visibility="gone"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/e_home_text_img" />
+                
+                <!--  
+                <Button
+                    android:id="@+id/bn_recommend_join"
+                    android:layout_width="81dip"
+                    android:layout_height="30dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tv_join_buttons"
+                    android:background="@drawable/bn_shape"
+                    android:text="@string/txt_bn_lj_join"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />-->
+                
+                <com.beyondsoft.ep2p.view.CountDownButtonView
+                    android:id="@+id/bn_recommend_join"
+                    android:layout_width="81dip"
+                    android:layout_height="30dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tv_join_buttons"
+                    android:background="@drawable/bn_shape"
+                    android:text="@string/txt_bn_lj_join"
+                    android:textColor="@color/white"
+                    android:textSize="12sp">
+                    </com.beyondsoft.ep2p.view.CountDownButtonView>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="3dip"
+            android:layout_marginTop="10dp"
+            android:background="@color/e_progressbar_bg_null" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp" >
+
+            <TextView
+                android:id="@+id/tv_re_hint1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_horizontal"
+                android:drawableRight="@drawable/page_cfp_list_line"
+                android:drawablePadding="5dp"
+                android:textColor="@color/e_button_bg_off"
+                android:text="e抵押" />
+
+
+            <TextView
+                android:id="@+id/tv_re_hint2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_re_hint1"
+                android:gravity="center_horizontal"
+                android:drawableRight="@drawable/page_cfp_list_line"
+                android:drawablePadding="5dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/e_button_bg_off"
+                android:text="1511099A" />
+
+
+            <TextView
+                android:id="@+id/tv_re_hint3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_re_hint2"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/e_button_bg_off"
+                android:text="本息保障" />
+
+            <TextView android:id="@+id/iv_image_kjx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/e_home_page_images_03"
+                android:textColor="@color/white"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="奖励1.02%" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

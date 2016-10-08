@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_layout" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/HSpace"
+        android:layout_marginTop="@dimen/XHSpace"
+        android:text="@string/input_verification_code"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/font_btn_lll" />
+
+    <TextView
+        android:id="@+id/tv_tel_no_show"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/XXHSpace"
+        android:layout_marginTop="@dimen/XXHSpace"
+        android:gravity="center"
+        android:text="181****5678"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/font_title_hh" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/line_grey" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/et_sms_code"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/HSpace"
+            android:layout_weight="2"
+            android:background="@color/transparent"
+            android:hint="@string/security_center_sms_hint"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textColor="@color/dark"
+            android:textColorHint="@color/font_gray"
+            android:textSize="@dimen/font_text_h" />
+
+        <View
+            android:layout_width="0.5dip"
+            android:layout_height="@dimen/XXHSpace"
+            android:background="@color/blue" />
+
+        <TextView
+            android:id="@+id/tv_get_validation_code"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/txt_input_phone_hint3" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/line_grey" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/XXHSpace"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/HSpace2"
+        android:paddingRight="@dimen/HSpace2" >
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/voice_verification_code"
+            android:textColor="@color/e_text_bg_huise_black"
+            android:textSize="@dimen/font_btn_lll" />
+
+        <Button
+            android:id="@+id/bt_voice_validate"
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:background="@drawable/shape_button_bg_selector"
+            android:paddingLeft="@dimen/nomalSpace"
+            android:paddingRight="@dimen/nomalSpace"
+            android:text="@string/get_voice_verification_code"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_text_lm"
+            android:enabled="false" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_next_step"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_marginLeft="40dip"
+        android:layout_marginRight="40dip"
+        android:layout_marginTop="90dip"
+        android:background="@drawable/mine_bn_shape_bg"
+        android:enabled="false"
+        android:text="@string/next_step"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_text_h" />
+
+</LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="@color/transparent"
+    android:paddingBottom="30dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="30dp" >
+
+    <RelativeLayout
+        android:id="@+id/top_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/img_icon_rl"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerVertical="true" >
+
+            <ImageView
+                android:id="@+id/img_icon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/discover_station_list_head_small" />
+
+            <ImageView
+                android:id="@+id/img_icon_play"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:clickable="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/dis_statiion_list_play"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/img_icon_pause"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerInParent="true"
+                android:clickable="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/discover_station_list_pause_small"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/pinglun_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/img_icon_rl"
+            android:layout_alignTop="@+id/img_icon_rl"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/img_icon_rl"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="希腊危机幕"
+                android:textColor="@color/text_black_color"
+                android:textSize="@dimen/font_text_h" />
+
+            <TextView
+                android:id="@+id/img_icon_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="2015-12-24"
+                android:textColor="@color/e_text_bg_huise_black"
+                android:textSize="@dimen/font_text_l" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/img_icon_tingzhong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/discover_station_list_tingzhong"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:text="1332人"
+                    android:textColor="@color/e_text_bg_huise_black"
+                    android:textSize="@dimen/font_text_l" />
+
+                <TextView
+                    android:id="@+id/img_icon_zhan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:drawableLeft="@drawable/discover_station_list_zhan"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:text="453人"
+                    android:textColor="@color/e_text_bg_huise_black"
+                    android:textSize="@dimen/font_text_l" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+  
+
+</RelativeLayout>

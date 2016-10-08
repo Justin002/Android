@@ -1,0 +1,846 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_layout_no_right" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" >
+
+         <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/HSpace2"
+                android:paddingRight="@dimen/HSpace2" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/serial_number"
+                    android:textColor="@color/e_text_huise_buttom"
+                    android:textSize="@dimen/font_text_h" />
+
+                <TextView
+                    android:id="@+id/tv_borrowCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/HSpace"
+                    android:text="D15110199a"
+                    android:textColor="@color/e_text_huise_buttom"
+                    android:textSize="@dimen/font_text_h" />
+
+                <View
+                    android:layout_width="0dip"
+                    android:layout_height="1dip"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/tv_borrowName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/personal_turnover"
+                    android:textColor="@color/e_text_bg_huise_black"
+                    android:textSize="@dimen/font_text_h" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="@color/line_grey" />
+
+            
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/HSpace2"
+                android:paddingRight="@dimen/HSpace2"
+                android:background="@color/white"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/projectdetail"
+                  
+                    >
+                </ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/font_text_h"
+                android:paddingLeft="@dimen/MSpace"
+                android:text="@string/project_info"
+                android:textColor="@color/dark_gray"
+                />
+              </LinearLayout>
+          
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/HSpace2"
+                    android:paddingRight="@dimen/HSpace2" >
+
+                    <ImageView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/item_line"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/HSpace"
+                        android:text="@string/money_amount"
+                        android:textColor="@color/e_text_huise_buttom"
+                        android:textSize="@dimen/font_text_h" />
+
+                    <View
+                        android:layout_width="0dip"
+                        android:layout_height="1dip"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/tv_borrowMoney"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="4800.00元"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/font_text_h" />
+                </LinearLayout>
+
+             
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/HSpace2"
+                    android:paddingRight="@dimen/HSpace2" >
+
+                     <ImageView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/item_line"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/HSpace"
+                        android:text="@string/year_rate"
+                        android:textColor="@color/e_text_huise_buttom"
+                        android:textSize="@dimen/font_text_h" />
+
+                     <View
+                        android:layout_width="0dip"
+                        android:layout_height="1dip"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/tv_borrowRate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="18%"
+                        android:textColor="@color/orange"
+                        android:textSize="@dimen/font_text_h" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/HSpace2"
+                    android:paddingRight="@dimen/HSpace2" >
+
+                    <ImageView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/item_line"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/HSpace"
+                        android:text="@string/time_limit"
+                        android:textColor="@color/e_text_huise_buttom"
+                        android:textSize="@dimen/font_text_h" />
+
+                    <View
+                        android:layout_width="0dip"
+                        android:layout_height="1dip"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/tv_borDeadline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="12月"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/font_text_h" />
+                </LinearLayout>
+
+             
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/HSpace2"
+                    android:paddingRight="@dimen/HSpace2" >
+                    <ImageView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/item_line"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                         android:paddingLeft="@dimen/HSpace"
+                        android:text="@string/reimbursement"
+                        android:textColor="@color/e_text_huise_buttom"
+                        android:textSize="@dimen/font_text_h" />
+
+                    <View
+                        android:layout_width="0dip"
+                        android:layout_height="1dip"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/tv_repaymentTypeName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/monthly_payment"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/font_text_h" />
+                </LinearLayout>
+            </LinearLayout>
+<View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_marginLeft="@dimen/HSpace2"
+                    android:layout_marginRight="@dimen/HSpace2"
+                    android:background="@color/line_grey" />
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/HSpace2"
+                android:background="@color/white"
+                android:gravity="center_vertical">
+                
+                 <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/investment_info"
+                  
+                    />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/HSpace2"
+                android:text="@string/investment_info"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/font_text_h"/>
+</LinearLayout>
+          
+            
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/HSpace2"
+                    android:paddingRight="@dimen/HSpace2" >
+
+                    <ImageView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/item_line"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/HSpace"
+                        android:text="@string/investmented_amount"
+                        android:textColor="@color/e_text_huise_buttom"
+                        android:textSize="@dimen/font_text_h" />
+
+                    <View
+                        android:layout_width="0dip"
+                        android:layout_height="1dip"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/tv_intementMoney"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="5000.00元"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/font_text_h" />
+                </LinearLayout>
+
+              
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/HSpace2"
+                    android:paddingRight="@dimen/HSpace2" >
+
+                      <ImageView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/item_line"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/HSpace"
+                        android:text="@string/interest"
+                        android:textColor="@color/e_text_huise_buttom"
+                        android:textSize="@dimen/font_text_h" />
+
+                    <View
+                        android:layout_width="0dip"
+                        android:layout_height="1dip"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/tv_receivableInterest"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="1000.00元"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/font_text_h" />
+                </LinearLayout>
+
+                
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/HSpace2"
+                    android:paddingRight="@dimen/HSpace2" >
+
+                    <ImageView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/item_line"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/HSpace"
+                        android:text="@string/investment_reward"
+                        android:textColor="@color/e_text_huise_buttom"
+                        android:textSize="@dimen/font_text_h" />
+
+                    <View
+                        android:layout_width="0dip"
+                        android:layout_height="1dip"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/tv_awardAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="150.00元"
+                        android:textColor="@color/orange"
+                        android:textSize="@dimen/font_text_h" />
+                </LinearLayout>
+                
+                  <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/HSpace2"
+                    android:paddingRight="@dimen/HSpace2" >
+
+                      <ImageView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/item_line"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                         android:paddingLeft="@dimen/HSpace"
+                        android:text="加息收益"
+                        android:textColor="@color/e_text_huise_buttom"
+                        android:textSize="@dimen/font_text_h" />
+
+                    <View
+                        android:layout_width="0dip"
+                        android:layout_height="1dip"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/tv_receivableHike"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="1%"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/font_text_h" />
+                </LinearLayout>
+
+                
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/HSpace2"
+                    android:paddingRight="@dimen/HSpace2" >
+
+                    <ImageView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/item_line"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/HSpace"
+                        android:text="@string/investment_time"
+                        android:textColor="@color/e_text_huise_buttom"
+                        android:textSize="@dimen/font_text_h" />
+
+                    <View
+                        android:layout_width="0dip"
+                        android:layout_height="1dip"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/tv_investmentTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="2015-09-18 14:43:20"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/font_text_h" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="@color/line_grey"
+                android:layout_marginLeft="@dimen/HSpace2"
+                    android:layout_marginRight="@dimen/HSpace2" />
+
+             <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/HSpace2"
+                android:background="@color/white"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/item_wait_info"
+                  
+                    >
+                </ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+              android:gravity="center_vertical"
+               android:textSize="@dimen/font_text_h"
+                android:paddingLeft="@dimen/MSpace"
+                android:textColor="@color/dark_gray"
+                android:text="待收信息"
+                />
+              </LinearLayout>
+
+           
+
+            
+    
+          <LinearLayout
+              android:id="@+id/ll_progress_bar"
+              android:layout_width="fill_parent"
+              android:layout_height="45dp"
+               android:orientation="horizontal"
+                android:paddingLeft="@dimen/HSpace2"
+                android:paddingRight="@dimen/HSpace2"
+                android:gravity="center_vertical"
+                android:background="@color/transparent">
+                    
+                <ProgressBar
+                   
+                      android:id="@+id/progressBar"
+                      style="?android:attr/progressBarStyleHorizontal"
+                      android:layout_width="0dp"
+                      android:layout_height="5dp"
+                      android:layout_weight="3"
+                      android:focusable="false"
+                      android:progressDrawable="@drawable/progressbar"
+                      android:secondaryProgress="10"
+                      android:visibility="visible"
+                 />
+                <TextView
+                        android:id="@+id/tv_receivedWek"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:text="2/12期"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/font_text_h" />
+            </LinearLayout>
+          
+          <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/HSpace2"
+                    android:paddingRight="@dimen/HSpace2" >
+
+                    <ImageView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/item_line"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/HSpace"
+                        android:text="@string/investment_recieve_interest"
+                        android:textColor="@color/e_text_huise_buttom"
+                        android:textSize="@dimen/font_text_h" />
+
+                    <View
+                        android:layout_width="0dip"
+                        android:layout_height="1dip"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/tv_receivedMoney"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="3000.00元"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/font_text_h" />
+                </LinearLayout>
+
+              
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/HSpace2"
+                    android:paddingRight="@dimen/HSpace2" >
+
+                    <ImageView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/item_line"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/HSpace"
+                        android:text="@string/investment_wait_recieve_interest"
+                        android:textColor="@color/e_text_huise_buttom"
+                        android:textSize="@dimen/font_text_h" />
+
+                    <View
+                        android:layout_width="0dip"
+                        android:layout_height="1dip"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/tv_dueinMoney"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="3000.00元"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/font_text_h" />
+                </LinearLayout>
+            </LinearLayout>
+
+    
+          
+          
+            
+           
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="@color/line_grey"
+                android:layout_marginLeft="@dimen/HSpace2"
+                    android:layout_marginRight="@dimen/HSpace2" />
+
+             <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/HSpace2"
+                android:background="@color/white"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/item_agree_info"
+                  
+                    >
+                </ImageView>
+           
+                 <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                 android:textSize="@dimen/font_text_h"
+                android:paddingLeft="@dimen/MSpace"
+                android:textColor="@color/dark_gray"
+                android:text="合同信息"
+                />
+              </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/ll_look_agreement"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:background="@drawable/item_list_item_bg_selector"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/HSpace2"
+                android:paddingRight="@dimen/HSpace2" >
+
+                 <ImageView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/item_line"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/HSpace"
+                    android:gravity="center"
+                    android:text="《借款担保合同》"
+                    android:textColor="@color/e_text_huise_buttom"
+                    android:textSize="@dimen/font_text_h" />
+
+                <View
+                    android:layout_width="0dip"
+                    android:layout_height="1dip"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:src="@drawable/discover_into_image" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_look_creditor"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:background="@drawable/item_list_item_bg_selector"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/HSpace2"
+                android:paddingRight="@dimen/HSpace2" >
+
+                 <ImageView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/item_line"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/HSpace"
+                    android:gravity="center"
+                    android:text="《债权转让协议》"
+                    android:textColor="@color/e_text_huise_buttom"
+                    android:textSize="@dimen/font_text_h" />
+
+                <View
+                    android:layout_width="0dip"
+                    android:layout_height="1dip"
+                    android:layout_weight="1" 
+                    android:layout_marginLeft="@dimen/HSpace2"
+                    android:layout_marginRight="@dimen/HSpace2"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:src="@drawable/discover_into_image" />
+            </LinearLayout>
+            
+            
+           
+             <LinearLayout 
+                 android:id="@+id/ll_creditor_transfer_title"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/HSpace2"
+                android:background="@color/white"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/item_creditor_transfer"
+                  
+                    >
+                </ImageView>
+           
+                 <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="28dip"
+                android:textColor="@color/dark_gray"
+              android:gravity="center_vertical"
+               android:textSize="@dimen/font_text_h"
+                android:paddingLeft="@dimen/MSpace"
+                android:text="债权转让"
+                />
+              </LinearLayout>
+           
+             <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="@color/line_grey" 
+                android:layout_marginLeft="@dimen/HSpace2"
+                    android:layout_marginRight="@dimen/HSpace2"/>
+             
+            <LinearLayout 
+                android:id="@+id/ll_transferCreditor"
+                 android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:background="@drawable/item_list_item_bg_selector"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/HSpace2"
+                    android:paddingRight="@dimen/HSpace2">
+                <LinearLayout 
+                     android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                   >
+                    <ImageView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/item_line"/>
+                    
+                     <TextView
+                         android:id="@+id/tv_tansfer_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="@dimen/font_text_h"
+                    android:paddingLeft="@dimen/HSpace"
+                    android:text="立即转让"
+                    android:textColor="@color/e_text_huise_buttom"
+                    />
+
+                <View
+                    android:layout_width="0dip"
+                    android:layout_height="1dip"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/img_into"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:src="@drawable/discover_into_image" />
+                </LinearLayout>
+                
+                
+                <LinearLayout 
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                   >
+                    
+                </LinearLayout>
+            </LinearLayout>
+            
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginBottom="@dimen/XXHSpace"
+                android:background="@color/line_grey" />
+            
+            
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

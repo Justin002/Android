@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_layout_no_right" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="0dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_use"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/keyi_use"
+                 android:drawableBottom="@drawable/tab_index_selector"
+                android:textColor="@color/tab_text_font_selector"
+                android:textSize="@dimen/font_text_lm" />
+
+            <TextView
+                android:id="@+id/tv_unuse"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="0.5dip"
+                android:layout_marginRight="0.5dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/keyi_unuse"
+                 android:drawableBottom="@drawable/tab_index_selector"
+                android:textColor="@color/tab_text_font_selector"
+                android:textSize="@dimen/font_text_lm" />
+        </LinearLayout>
+
+        <com.beyondsoft.ep2p.view.SpecialViewPager
+            android:id="@+id/svp_content_card"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </com.beyondsoft.ep2p.view.SpecialViewPager>
+    </LinearLayout>
+
+</LinearLayout>

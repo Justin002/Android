@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        layout="@layout/title_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingTop="8dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/mine_auto_tender_add_money_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/auto_tender_add_head_tv_01"
+                    android:textColor="@color/blue"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/mine_auto_tender_add_dots_on" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingTop="8dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/mine_auto_tender_add_parameter_on" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/auto_tender_add_head_tv_02"
+                    android:textColor="@color/blue"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/mine_auto_tender_add_dots_on" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingTop="8dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/mine_auto_tender_add_project" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/auto_tender_add_head_tv_03"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+        <TextView
+            style="@style/AutoTender.GrayTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="25dp"
+            android:paddingBottom="3dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="0dp"
+            android:paddingTop="8dp"
+            android:text="@string/auto_tender_add_parameter_tvline_01"
+            android:textColor="@color/blue"
+            android:textSize="13dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_line"
+            android:background="#bbbbbb" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="0dp" >
+
+            <RadioButton
+                android:id="@+id/rb_auto_tender_add_021"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:button="@drawable/rb_auto_tender_selector"
+                android:paddingLeft="15dp"
+                android:paddingRight="0dp"
+                android:checked="true"
+                android:text="@string/mine_auto_tender_unlimited"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_auto_tender_add_021"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb_auto_tender_add_022"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:button="@drawable/rb_auto_tender_selector"
+                     />
+
+                <TextView
+                    android:id="@+id/et_auto_tender_add_month_01"
+                    android:layout_width="111dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/btn_auto_tender_selector"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:drawableRight="@drawable/xiala_icon"
+                    android:hint="@string/auto_tender_add_parameter_et_hint"
+                    android:textColorHint="@color/white"
+                    android:paddingLeft="14dp"
+                    android:paddingRight="14dp"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center"
+                    android:text="@string/auto_tender_tv_guodu"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/et_auto_tender_add_month_02"
+                    android:layout_width="111dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_auto_tender_selector"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:drawableRight="@drawable/xiala_icon"
+                    android:hint="@string/auto_tender_add_parameter_et_hint"
+                    android:textColorHint="@color/white"
+                    android:paddingLeft="14dp"
+                    android:paddingRight="14dp"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_line"
+            android:layout_marginTop="10dp"
+            android:background="#bbbbbb" />
+
+        <TextView
+            style="@style/AutoTender.GrayTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="3dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="0dp"
+            android:paddingTop="8dp"
+            android:text="@string/auto_tender_add_parameter_tvline_02"
+            android:textColor="@color/blue"
+            android:textSize="13dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_line"
+            android:background="#bbbbbb" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="0dp" >
+
+            <RadioButton
+                android:id="@+id/rb_auto_tender_add_023"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:button="@drawable/rb_auto_tender_selector"
+                android:paddingLeft="15dp"
+                android:paddingRight="0dp"
+                android:checked="true"
+                android:text="@string/mine_auto_tender_unlimited"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_auto_tender_add_022"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb_auto_tender_add_024"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:button="@drawable/rb_auto_tender_selector"
+                     />
+
+                <TextView
+                    android:id="@+id/et_auto_tender_add_percent_01"
+                    android:layout_width="111dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/btn_auto_tender_selector"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:drawableRight="@drawable/xiala_icon"
+                    android:hint="@string/auto_tender_add_parameter_et_hint"
+                    android:textColorHint="@color/white"
+                    android:paddingLeft="14dp"
+                    android:paddingRight="14dp"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center"
+                    android:text="@string/auto_tender_tv_guodu"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/et_auto_tender_add_percent_02"
+                    android:layout_width="111dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_auto_tender_selector"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:drawableRight="@drawable/xiala_icon"
+                    android:hint="@string/auto_tender_add_parameter_et_hint"
+                    android:textColorHint="@color/white"
+                    android:paddingLeft="14dp"
+                    android:paddingRight="14dp"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_line"
+            android:layout_marginTop="10dp"
+            android:background="#bbbbbb" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_auto_tender_add_next_02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#2980B9"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="@string/next_step"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_null_data_ui"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebeff1"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="15dp"
+        android:drawableTop="@drawable/null_data_icon"
+        android:text="@string/e_data_null"
+        android:textColor="@color/e_text_bg_huise_black"
+        android:textSize="15sp" />
+
+</LinearLayout>

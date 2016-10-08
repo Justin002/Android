@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/discover_r_rusult_bg"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+     <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:orientation="vertical">
+    <ImageView
+        android:id="@+id/pinglun_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/discover_p_head" />
+
+    <TextView
+        android:id="@+id/man_tip_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:text="1805555****抢到的红包"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_text_m" />
+
+    <TextView
+        android:id="@+id/tv_receiveamount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:text="18.25元"
+        android:textColor="@color/orange_discover"
+        android:textSize="@dimen/font_title_h" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="5dp"
+        android:text="已存入可用余额，可直接使用"
+        android:textColor="@color/orange_discover"
+        android:textSize="@dimen/font_btn_0" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1" />
+    </LinearLayout>
+
+     <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_detail_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        
+        android:text="已领取80/100，共830.32/1000.00元"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_text_m" />
+
+    <ListView
+        android:id="@+id/lv_content"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="6dp"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@color/line_grey"
+        android:dividerHeight="0dp" >
+    </ListView>
+    </LinearLayout>
+
+</LinearLayout>

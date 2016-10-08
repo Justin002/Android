@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_layout_zritem"
+    android:layout_width="match_parent"
+    android:layout_height="125dip"
+    android:background="@drawable/dis_redbag_tv"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_weight="2"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical" >
+
+            <TextView android:id="@+id/tv_text_nhl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textColor="@color/e_text_bg_yellow"
+                android:textSize="26sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/txt_tv_text_nhll2"
+                android:textColor="@color/e_text_bg_huise_black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"
+            android:layout_weight="2"
+            android:gravity="left"
+            android:orientation="vertical" >
+
+            <TextView android:id="@+id/tv_text_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textColor="@color/e_text_bg_yellow"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/txt_tv_zq_income2"
+                android:textColor="@color/e_text_bg_huise_black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView android:id="@+id/tv_text_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="50万"
+                android:textColor="@color/e_text_bg_yellow"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/txt_tv_money_amount"
+                android:textColor="@color/e_text_bg_huise_black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical" >
+
+            <TextView android:id="@+id/tv_text_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textColor="@color/e_text_bg_yellow"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_tv_text_hk2"
+                android:textColor="@color/e_text_bg_huise_black" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/iv_img_hint1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="23dp"
+            android:layout_marginRight="5dp"
+            android:contentDescription="@string/app_name"
+            android:gravity="center_horizontal"
+            android:src="@drawable/e_img_zr_iocn_03" />
+
+        <TextView
+            android:id="@+id/tv_re_hint1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_img_hint1"
+            android:gravity="center_horizontal"
+            android:text="@string/txt_tv_text_pro_money2"
+            android:textColor="#666666" />
+
+        <TextView
+            android:id="@+id/tv_text_meony"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_toRightOf="@+id/tv_re_hint1"
+            android:gravity="center_horizontal"
+            android:text="￥122"
+            android:textColor="#666666" />
+
+
+            <ImageView
+                android:id="@+id/iv_img_hint23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/e_img_zr_icon_right_off_03" />
+    </RelativeLayout>
+
+</LinearLayout>

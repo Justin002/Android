@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_layout" />
+
+            <com.handmark.pulltorefresh.library.PullToRefreshListView
+                android:id="@+id/listview_other_notice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:cacheColorHint="@android:color/transparent"
+                android:descendantFocusability="blocksDescendants"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:fadingEdge="none"
+                android:fastScrollEnabled="false"
+                android:footerDividersEnabled="false"
+                android:headerDividersEnabled="false"
+                android:listSelector="@drawable/shape_list_item_pressed"
+                android:smoothScrollbar="true" />
+
+        <!--<TextView
+            android:id="@+id/tv_list_lines"
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="21dp"
+            android:background="@drawable/page_img_xian2_03"
+            android:paddingLeft="10dp" />  -->
+    <RelativeLayout
+        android:id="@+id/rl_layout_null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ebeff1"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawablePadding="15dp"
+            android:drawableTop="@drawable/e_img_data_null_03"
+            android:text="@string/e_data_null"
+            android:textColor="#9e9f9f" />
+    </RelativeLayout>
+
+    <include layout="@layout/wifi_off_layout" />
+
+</LinearLayout>

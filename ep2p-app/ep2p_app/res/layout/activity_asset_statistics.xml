@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_layout" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="28dip"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/HSpace2"
+                android:text="@string/asset_statistics"
+                android:textColor="@color/font_gray"
+                android:textSize="@dimen/font_text_l" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/title_line"
+                android:background="@color/line_grey" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/HSpace2" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/available_balance1"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/font_btn_lll" />
+
+                    <View
+                        android:layout_width="0dip"
+                        android:layout_height="1dip"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/availableBalance_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/HSpace2"
+                        android:text="￥0.00"
+                        android:textColor="@color/font_blue"
+                        android:textSize="@dimen/font_btn_0" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/title_line"
+                    android:background="@color/line_grey" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/freeze_balance"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/font_btn_lll" />
+
+                    <View
+                        android:layout_width="0dip"
+                        android:layout_height="1dip"
+                        android:layout_weight="1" />
+            
+                    <TextView
+                        android:id="@+id/freezingAmount_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/HSpace2"
+                        android:text="￥0.00"
+                        android:textColor="@color/font_blue"
+                        android:textSize="@dimen/font_btn_0" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/title_line"
+                    android:background="@color/line_grey" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/wait_principal"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/font_btn_lll" />
+
+                    <View
+                        android:layout_width="0dip"
+                        android:layout_height="1dip"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/dueinAmount_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/HSpace2"
+                        android:text="￥0.00"
+                        android:textColor="@color/font_blue"
+                        android:textSize="@dimen/font_btn_0" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/title_line"
+                    android:background="@color/line_grey" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/wait_interest"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/font_btn_lll" />
+
+                    <View
+                        android:layout_width="0dip"
+                        android:layout_height="1dip"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/dueinInterest_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/HSpace2"
+                        android:text="￥0.00"
+                        android:textColor="@color/font_blue"
+                        android:textSize="@dimen/font_btn_0" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/title_line"
+                android:background="@color/line_grey" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="28dip"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/HSpace2"
+                android:text="@string/cumulative_net_income"
+                android:textColor="@color/font_gray"
+                android:textSize="@dimen/font_text_l" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/title_line"
+                android:background="@color/line_grey" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/HSpace2" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/investment_interest"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/font_btn_lll" />
+
+                    <View
+                        android:layout_width="0dip"
+                        android:layout_height="1dip"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/investInterest_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/HSpace2"
+                        android:text="￥0.00"
+                        android:textColor="@color/font_blue"
+                        android:textSize="@dimen/font_btn_0" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/title_line"
+                    android:background="@color/line_grey" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/add_rate_income"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/font_btn_lll" />
+
+                    <View
+                        android:layout_width="0dip"
+                        android:layout_height="1dip"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/rateInterest_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/HSpace2"
+                        android:text="￥0.00"
+                        android:textColor="@color/font_blue"
+                        android:textSize="@dimen/font_btn_0" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/title_line"
+                    android:background="@color/line_grey" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/investment_reward"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/font_btn_lll" />
+
+                    <View
+                        android:layout_width="0dip"
+                        android:layout_height="1dip"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/investmentIncentive_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/HSpace2"
+                        android:text="￥0.00"
+                        android:textColor="@color/font_blue"
+                        android:textSize="@dimen/font_btn_0" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/title_line"
+                    android:background="@color/line_grey" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/red_bag_income"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/font_btn_lll" />
+
+                    <View
+                        android:layout_width="0dip"
+                        android:layout_height="1dip"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/redEnvelope_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/HSpace2"
+                        android:text="￥0.00"
+                        android:textColor="@color/font_blue"
+                        android:textSize="@dimen/font_btn_0" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/title_line"
+                    android:background="@color/line_grey" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/referral_bonuses"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/font_btn_lll" />
+
+                    <View
+                        android:layout_width="0dip"
+                        android:layout_height="1dip"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/recommendedAwards_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/HSpace2"
+                        android:text="￥0.00"
+                        android:textColor="@color/font_blue"
+                        android:textSize="@dimen/font_btn_0" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/title_line"
+                android:background="@color/line_grey" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

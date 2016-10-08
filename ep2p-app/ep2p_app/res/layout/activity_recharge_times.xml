@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_layout" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/e_progressbar_bg_null" >
+
+        <include
+            android:id="@+id/ll_wifi_off"
+            layout="@layout/wifi_off_layout"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ll_recharge_times"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="150dip"
+                android:background="@color/blue" >
+
+                <LinearLayout
+                    android:id="@+id/ll_bank_card"
+                    android:layout_width="fill_parent"
+                    android:layout_height="115dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="-1dip"
+                    android:layout_marginLeft="@dimen/XXHSpace"
+                    android:layout_marginRight="@dimen/XXHSpace"
+                    android:background="@drawable/icon_bank_card_bg"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dip"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/HSpace" >
+
+                        <ImageView
+                            android:id="@+id/iv_bank_belong_icon"
+                            android:layout_width="24dip"
+                            android:layout_height="24dip"
+                            android:layout_margin="@dimen/nomalSpace"
+                            android:src="@drawable/icon_construction_bank" />
+
+                        <TextView
+                            android:id="@+id/tv_bankcard_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/HSpace"
+                            android:text="中国建设银行"
+                            android:textColor="@color/dark"
+                            android:textSize="@dimen/font_btn_lll" />
+
+                        <View
+                            android:layout_width="0dip"
+                            android:layout_height="1dip"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="17.5dip"
+                            android:layout_marginLeft="@dimen/nomalSpace"
+                            android:layout_marginRight="@dimen/HSpace2"
+                            android:background="@drawable/shape_button_bg_blue"
+                            android:gravity="center"
+                            android:paddingLeft="4dp"
+                            android:paddingRight="4dp"
+                            android:text="快捷充值"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_text_l" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.5dip"
+                        android:layout_marginLeft="@dimen/HSpace"
+                        android:layout_marginRight="@dimen/HSpace2"
+                        android:background="@color/light_gray_color" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/MSpace"
+                                android:text="***"
+                                android:textColor="@color/e_text_shtz_top"
+                                android:textSize="@dimen/font_title_m" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/MSpace"
+                                android:text="****"
+                                android:textColor="@color/e_text_shtz_top"
+                                android:textSize="@dimen/font_title_m" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/MSpace"
+                                android:text="****"
+                                android:textColor="@color/e_text_shtz_top"
+                                android:textSize="@dimen/font_title_m" />
+
+                            <TextView
+                                android:id="@+id/tv_bankcardnumber_times"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/MSpace"
+                                android:text="2234"
+                                android:textColor="@color/e_text_shtz_top"
+                                android:textSize="@dimen/font_title_m" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/iv_recharge_times_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="6dp"
+                            android:layout_marginLeft="11dp"
+                            android:gravity="center" >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/recharge_bank_card_prompt_small" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/font_gray" />
+
+            <LinearLayout
+                android:id="@+id/ll_balance_type"
+                android:layout_width="fill_parent"
+                android:layout_height="48dip"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:background="@color/font_gray" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="24dip"
+                    android:gravity="bottom"
+                    android:orientation="horizontal"
+                    android:paddingLeft="40dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/HSpace"
+                        android:gravity="center"
+                        android:text="@string/general_fund"
+                        android:textColor="@color/e_text_bg_huise_black"
+                        android:textSize="@dimen/font_btn_0" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/china_yuan_symbol"
+                        android:textColor="@color/dark"
+                        android:textSize="@dimen/font_btn_0" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8000.00"
+                        android:textColor="@color/dark"
+                        android:textSize="@dimen/font_btn_0" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="24dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="40dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/HSpace"
+                        android:gravity="center"
+                        android:text="@string/top_up_fund"
+                        android:textColor="@color/e_text_bg_huise_black"
+                        android:textSize="@dimen/font_btn_0" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/china_yuan_symbol"
+                        android:textColor="@color/dark"
+                        android:textSize="@dimen/font_btn_0" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="596.00"
+                        android:textColor="@color/dark"
+                        android:textSize="@dimen/font_btn_0" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="@color/font_gray" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/HSpace2"
+                android:paddingRight="@dimen/HSpace2" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="充值金额："
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/font_btn_lll" />
+
+                <EditText
+                    android:id="@+id/et_recharge_times_money"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:hint="请输入您的充值金额"
+                    android:maxLength="12"
+                    android:numeric="decimal"
+                    android:paddingLeft="@dimen/nomalSpace"
+                    android:paddingRight="@dimen/nomalSpace"
+                    android:singleLine="true"
+                    android:textColor="@color/orange"
+                    android:textCursorDrawable="@drawable/cursor_blue"
+                    android:textSize="@dimen/font_btn_0" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/china_yuan"
+                    android:textColor="@color/dark_gray" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="@color/font_gray" />
+
+            <Button
+                android:id="@+id/bt_recharge_times_next"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_marginLeft="40dip"
+                android:layout_marginRight="40dip"
+                android:layout_marginTop="34dip"
+                android:background="@drawable/btn_auto_tender_next_selector2"
+                android:enabled="false"
+                android:text="@string/next_step"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

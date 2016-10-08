@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_layout" />
+
+    <TextView
+        android:id="@+id/tv_detail_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_bg"
+        android:paddingBottom="15dp"
+        android:paddingLeft="8dip"
+        android:paddingTop="15dp"
+        android:text="已领取80/100"
+        android:textColor="#989b9c"
+        android:textSize="@dimen/font_text_m" />
+	<!-- 
+    <ListView
+        android:id="@+id/lv_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@color/line_grey"
+        android:dividerHeight="0dp" >
+         -->
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/lv_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@color/line_grey"
+        android:dividerHeight="0dp" >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- e生财富的UI颜色 -->
+    <color name="e_main_bg">#ebeff1</color>
+    <color name="e_main_bg_title">#2980b9</color>
+    <color name="e_main_bg_title_press">#2573a6</color>
+    <color name="e_text_bg_yellow">#f5a932</color>
+    <color name="e_text_bg_black">#666666</color>
+    <color name="e_text_bg_huise_black">#999999</color>
+    <color name="e_button_bg">#2980b9</color>
+    <color name="e_button_bg_off">#bdc3c7</color>
+    <color name="e_progressbar_bg">#3498db</color>
+    <color name="e_progressbar_bg_null">#ebeff1</color>
+    <color name="e_syshint_bg">#f39c12</color>
+    <color name="e_style_hxian">#bdc3c7</color>
+    <color name="e_style_register_jd_line">#ebeff1</color>
+    <color name="e_style_sxian">#5e778f</color>
+    <color name="e_pu_buttom">#46a1dd</color>
+    <color name="e_rounded_progressbar_bg">#f2af11</color>
+    <color name="e_rounded_progressbar_bg_de">#6eb4e6</color>
+    <color name="e_text_dialog_yellow">#fff75c</color>
+    <color name="e_text_shtz_top">#34495e</color>
+    <color name="e_text_shtz_buttom">#797f83</color>
+    <color name="e_text_huise_buttom">#999999</color>
+    <color name="dialog_line">#d5d5d5</color>
+    <color name="e_text_news_context">#bdc3c7</color>
+    <color name="e_text_news_time">#c7c7cc</color>
+    <color name="e_home_text_img">#95a5a6</color>
+    <color name="e_wifi_off_text">#9e9f9f</color>
+    <color name="e_news_text_color">#cbcbcf</color>
+    
+    <color name="white">#ffffff</color>
+    <color name="white_press">#e5e5e5</color>
+    <color name="orange">#f39c12</color>
+    <color name="orange_discover">#ffe823</color>
+    <color name="app_bg">#ebeff1</color>
+    <color name="mine_blue">#2980b9</color>
+    <color name="text_color">#666666</color>
+    <color name="text_black_color">#222222</color>
+    <color name="text_grey_color">#c7c7cc</color>
+    <color name="line_grey_color">#c8c7cc</color>
+    
+    <!-- 积分 -->
+  <color name="layout_background">#f7f7f7</color>
+  <color name="text_black">#7a7a7a</color>
+  <color name="text_lvse">#29B92C</color>
+   <color name="layout_background_zr_item">#f5f7f8</color>
+    <color name="text_black_dark">#383838</color>
+   
+    <!-- hardy.zhou -->
+    <color name="transparent">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="line_grey">#c8c7cc</color>
+    <color name="red">#ff0000</color>
+    <color name="blue">#2980b9</color>
+    <color name="light_gray">#f7f7f7</color>
+    <color name="font_blue">#2980b9</color>
+    <color name="font_gray">#bdc3c7</color>
+    <color name="light_blue">#dbe0e2</color>
+    <color name="dark">#333333</color>
+    <color name="milky_white">#fbfbfb</color>
+    <color name="light_blue_color">#3498db</color>
+    <color name="light_gray_color">#d1d1d1</color>
+    <color name="sky_blue">#157efb</color>
+    <color name="dark_gray">#c7c7cb</color>
+    <color name="transparent_black">#d8475868</color>
+    <!--end hardy.zhou -->
+    
+    
+   <!-- xiaoliang -->
+    <!-- 红色 -->
+    <color name="hongse">#e62b2d</color>
+    <color name="gray">#808080</color>
+    <color name="dis_ninegrid_tv">#2c3e50</color>
+    <color name="dis_redtail_line">#e3e3e3</color>
+    <color name="dis_r_more_normal">#ecf0f1</color>
+    <color name="dis_r_more_pressed">#d4d8d8</color>
+    <color name="dis_r_zhongse">#8b1508</color>
+    <color name="dis_r_shenghong">#ea3925</color>
+    <color name="dis_r_main_line_gray">#E5E5E5</color>
+	<!-- end xiaoliang -->
+	
+	
+	
+	
+	
+	
+	
+	 <color name="progress_gray">#FFD8D8D8</color>
+    <color name="progress_gray_dark">#FF383838</color>
+    <color name="default_blue_light">#ff33b5e5</color>
+    
+    <color name="redbag_check_gray">#9fa0a0</color>
+	
+
+</resources>

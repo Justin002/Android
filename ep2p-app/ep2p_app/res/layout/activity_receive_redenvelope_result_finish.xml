@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/discover_r_rusult_bg"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:text="抢光啦"
+        android:textColor="@color/orange_discover"
+        android:textSize="@dimen/font_title_hh" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:text="来慢了，本轮红包已抢光了!"
+        android:textColor="@color/orange_discover"
+        android:textSize="@dimen/font_btn_0" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1" />
+     </LinearLayout>
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="60dp"
+        android:text="已领取100/100，共1000.00/1000.00元"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_btn_0" />
+
+    <ListView
+        android:id="@+id/lv_content"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="5dp"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@color/line_grey"
+        android:dividerHeight="0dp" >
+    </ListView>
+    </LinearLayout>
+
+</LinearLayout>

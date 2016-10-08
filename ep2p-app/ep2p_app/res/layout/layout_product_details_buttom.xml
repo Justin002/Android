@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/e_main_bg"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_line"
+        android:layout_marginTop="15dp"
+        android:background="@color/e_style_hxian" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/HSpace2" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/txt_tv_mode_repayment" />
+
+        <TextView
+            android:id="@+id/tv_moderepayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="按月等额本息还款"
+            android:textColor="@color/e_text_bg_black" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_line"
+        android:background="@color/e_style_hxian" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/HSpace2" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/txt_tv_interest" />
+
+        <TextView
+            android:id="@+id/tv_mode_interest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="投标即计息"
+            android:textColor="@color/e_text_bg_black" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_line"
+        android:background="@color/e_style_hxian" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/HSpace2" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/txt_tv_guarantee" />
+
+        <TextView
+            android:id="@+id/tv_mode_guarantee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="100%本息保障"
+            android:textColor="@color/e_text_bg_black" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_line"
+        android:background="@color/e_style_hxian" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_line"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_news_title"
+            android:background="@drawable/page_img_xian_03" />
+
+        <TextView
+            android:id="@+id/tv_news_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:singleLine="true"
+            android:text="@string/txt_tv_description"
+            android:textColor="@color/e_text_bg_huise_black"
+            android:textSize="@dimen/font_text_m" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/title_line"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@+id/tv_news_title"
+            android:background="@drawable/page_img_xian_03" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_xm_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:padding="@dimen/XHSpace"
+        android:text="@string/txt_tv_description" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_line"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_news_title2"
+            android:background="@drawable/page_img_xian_03" />
+
+        <TextView
+            android:id="@+id/tv_news_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:singleLine="true"
+            android:text="@string/txt_tv_participation"
+            android:textColor="@color/e_text_bg_huise_black"
+            android:textSize="@dimen/font_text_m" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/title_line"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@+id/tv_news_title2"
+            android:background="@drawable/page_img_xian_03" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_xm_participation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:padding="@dimen/XHSpace"
+        android:text="仅限新注册用户中第一次投资" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_line"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_news_title23"
+            android:background="@drawable/page_img_xian_03" />
+
+        <TextView
+            android:id="@+id/tv_news_title23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:singleLine="true"
+            android:text="@string/txt_tv_record"
+            android:textColor="@color/e_text_bg_huise_black"
+            android:textSize="@dimen/font_text_m" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/title_line"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@+id/tv_news_title23"
+            android:background="@drawable/page_img_xian_03" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listview_record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/page_img_xian_03"
+        android:dividerHeight="0dp" />
+
+</LinearLayout>

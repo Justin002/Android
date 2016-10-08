@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/apply_key_board"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_pass_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="@string/security_center_modify_pay_pwd2"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_btn_ll" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="18dp" 
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textColor="@color/e_text_bg_black"
+                    android:textSize="@dimen/font_title_h" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textColor="@color/e_text_bg_black"
+                    android:textSize="@dimen/font_title_h" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textColor="@color/e_text_bg_black"
+                    android:textSize="@dimen/font_title_h" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textColor="@color/e_text_bg_black"
+                    android:textSize="@dimen/font_title_h" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textColor="@color/e_text_bg_black"
+                    android:textSize="@dimen/font_title_h" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textColor="@color/e_text_bg_black"
+                    android:textSize="@dimen/font_title_h" />
+            </LinearLayout>
+
+            <com.beyondsoft.ep2p.view.password.GridPasswordView
+                android:id="@+id/gpv_normal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"          
+                app:lineWidth="0dp"
+                app:passwordTransformation="●"
+                app:pwtextColor="@color/e_text_bg_black"
+                app:pwtextSize="@dimen/font_title_m" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/bn_zf_pay"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="24dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+           	android:background="@drawable/mine_bn_shape_bg"
+           	android:enabled="false"
+            android:text="@string/txt_bn_ok_zf"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_layout_no_right" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_marginTop="@dimen/HSpace"
+        android:background="@color/line_grey" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/HSpace2"
+            android:paddingRight="@dimen/HSpace2" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/card_holder"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/font_btn_lll" />
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/HSpace"
+                android:singleLine="true"
+                android:text="戴用"
+                android:textColor="@color/e_text_bg_huise_black"
+                android:textSize="@dimen/font_btn_0" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_marginLeft="@dimen/HSpace2"
+            android:background="@color/line_grey" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/HSpace2"
+            android:paddingRight="@dimen/HSpace" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/bank_card_num"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/font_btn_lll" />
+
+       <!--      <EditText
+                android:id="@+id/et_card_no"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/HSpace"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:hint="@string/please_input_bank_card"
+                android:inputType="number"
+                android:maxLength="20"
+                android:singleLine="true"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/font_btn_0" 
+                android:cursorVisible="true"
+                android:textCursorDrawable="@null"/> -->
+                
+           <com.beyondsoft.ep2p.view.BankCardNumEditText
+            android:id="@+id/et_card_no"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/HSpace"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:cursorVisible="true"
+            android:textCursorDrawable="@null"
+            android:hint="请输入您的卡号"
+            android:inputType="number"
+            android:singleLine="true"
+            android:maxLength="23"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/font_btn_0" />
+
+            <ImageView
+                android:id="@+id/iv_delete"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_delete"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/line_grey" />
+
+    <LinearLayout
+        android:id="@+id/ll_input_hint"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:background="@color/orange"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tv_card_no_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/LSpace"
+            android:minWidth="55dip"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_btn_x" />
+
+        <TextView
+            android:id="@+id/tv_card_no_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/LSpace"
+            android:minWidth="55dip"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_btn_x" />
+
+        <TextView
+            android:id="@+id/tv_card_no_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/LSpace"
+            android:minWidth="55dip"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_btn_x" />
+
+        <TextView
+            android:id="@+id/tv_card_no_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/LSpace"
+            android:minWidth="55dip"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_btn_x" />
+        
+        <TextView
+            android:id="@+id/tv_card_no_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/LSpace"
+            android:minWidth="55dip"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_btn_x" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_marginTop="@dimen/HSpace"
+        android:background="@color/light_gray" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_bank"
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:background="@drawable/item_list_item_bg_selector"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/HSpace2"
+            android:paddingRight="@dimen/HSpace2" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/bank"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/font_btn_lll" />
+
+            <View
+                android:layout_width="0dip"
+                android:layout_height="1dip"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tv_bank_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/HSpace"
+                android:gravity="center"
+                android:text="@string/please_select"
+                android:textColor="@color/text_grey_color"
+                android:textSize="@dimen/font_btn_lll" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:src="@drawable/discover_into_image" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_marginLeft="@dimen/HSpace2"
+            android:background="@color/line_grey" />
+
+        <LinearLayout
+            android:id="@+id/ll_region"
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:background="@drawable/item_list_item_bg_selector"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/HSpace2"
+            android:paddingRight="@dimen/HSpace2" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/region"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/font_btn_lll" />
+
+            <View
+                android:layout_width="0dip"
+                android:layout_height="1dip"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tv_bankcard_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/HSpace"
+                android:gravity="center"
+                android:text="@string/please_select"
+                android:textColor="@color/text_grey_color"
+                android:textSize="@dimen/font_btn_lll" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:src="@drawable/discover_into_image" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/line_grey" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_marginTop="@dimen/HSpace"
+        android:background="@color/line_grey" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/HSpace2"
+        android:paddingRight="@dimen/HSpace2" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/region_bank_name"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/font_btn_lll" />
+
+        <EditText
+            android:id="@+id/et_open_bank"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/HSpace"
+            android:background="@color/transparent"
+            android:hint="@string/please_input_region_bank_name"
+            android:maxLength="50"
+            android:singleLine="true"
+            android:textColor="@color/dark"
+            android:textColorHint="@color/text_grey_color"
+            android:textSize="@dimen/font_btn_lll" 
+            android:cursorVisible="true"
+            android:textCursorDrawable="@null"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/line_grey" />
+
+    <Button
+        android:id="@+id/bt_next_step"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_marginLeft="36dip"
+        android:layout_marginRight="36dip"
+        android:layout_marginTop="@dimen/HSpace2"
+        android:background="@drawable/mine_bn_shape_bg"
+        android:text="@string/next_step"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_text_h"
+        android:enabled="false" />
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_layout_no_right" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_line"
+        android:layout_marginTop="@dimen/mine_setting_marginTop_feedback"
+        android:background="@color/line_grey" />
+
+    <EditText
+        android:id="@+id/feedback_et"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="20dp"
+        android:paddingTop="17dp"
+        android:gravity="left|top"
+        android:lineSpacingExtra="2dp"
+        android:maxLength="100"
+        android:textColor="@color/text_black_color"
+        android:textSize="@dimen/font_btn_0"
+        android:background="@color/white"
+        android:textColorHint="@color/text_grey_color"
+        android:textCursorDrawable="@null"
+        android:hint="@string/mine_setting_feedback_hint" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_line"
+        android:background="@color/line_grey" />
+
+    <TextView
+        android:id="@+id/char_count_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:paddingRight="16dp"
+        android:gravity="right"
+        android:textColor="@color/text_grey_color"
+        android:text="(0/100)" />
+    
+    <Button 
+        android:id="@+id/submit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="26dp"
+        android:text="@string/mine_setting_feedback_submit"
+        android:gravity="center"
+        android:layout_marginLeft="46dp"
+        android:layout_marginRight="46dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_btn_mm"
+        android:enabled="false"
+        android:background="@drawable/mine_bn_shape_bg"/>
+
+</LinearLayout>

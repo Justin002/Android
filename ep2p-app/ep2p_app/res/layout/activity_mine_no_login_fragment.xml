@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="198dp"
+    android:background="@color/e_main_bg_title"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/view_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height" />
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginRight="38dp"
+        android:background="@drawable/login_bn_shape_bg"
+        android:gravity="center"
+        android:text="@string/mine_no_login"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_btn_ll" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/mine_no_login_hello"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_text_lmm" />
+
+</LinearLayout>

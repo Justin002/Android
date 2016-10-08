@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_layout_no_right" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:paddingLeft="13dp"
+        android:text="@string/security_center_origin_phone"
+        android:textColor="@color/e_text_bg_black"
+        android:textSize="@dimen/font_btn_lll" />
+
+    <TextView
+        android:id="@+id/phone_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:gravity="center"
+        android:textColor="@color/e_text_bg_black"
+        android:textSize="@dimen/font_title_hh" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_line"
+        android:layout_marginTop="31dp"
+        android:background="@color/line_grey" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mine_height"
+        android:background="@color/white" >
+
+        <EditText
+            android:id="@+id/sms_code_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/sms_driver_view"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/security_center_sms_hint"
+            android:inputType="number"
+            android:maxLength="10"
+            android:paddingLeft="@dimen/title_left_padding"
+            android:textColor="@color/e_text_bg_black"
+            android:textColorHint="@color/text_grey_color"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/font_btn_0" />
+
+        <View
+            android:id="@+id/sms_driver_view"
+            android:layout_width="@dimen/title_line"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/get_sms_code_btn"
+            android:background="@color/e_main_bg_title" />
+
+        <TextView
+            android:id="@+id/get_sms_code_btn"
+            android:layout_width="115dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="@string/security_center_get_sms"
+            android:textColor="@color/e_main_bg_title"
+            android:textSize="@dimen/font_btn_0" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_line"
+        android:background="@color/line_grey" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/voice_sms_btn"
+            android:layout_centerVertical="true"
+            android:text="@string/security_center_sms_error_hint"
+            android:textColor="@color/e_text_bg_huise_black"
+            android:textSize="@dimen/font_btn_lll" />
+
+        <Button
+            android:id="@+id/voice_sms_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="31dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/mine_bn_shape_bg"
+            android:text="@string/security_center_sms_voice_hint"
+            android:textColor="@color/white"
+            android:enabled="false"
+            android:textSize="@dimen/font_btn_0" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/next_btn"
+        android:layout_width="@dimen/btn_width"
+        android:layout_height="@dimen/btn_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/mine_bn_shape_bg"
+        android:enabled="false"
+        android:text="@string/next_step"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_btn_mm" />
+
+</LinearLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/e_main_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_layout_no_right" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="48dp"
+        android:background="@color/e_main_bg_title" >
+
+        <TextView
+            android:id="@+id/tv_phone_bill_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/phone_bill_detail_icon"
+            android:gravity="center_horizontal"
+            android:paddingTop="10dp"
+            android:text="20元"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_title_m" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/vip_detail_content1"
+            android:textColor="#333333"
+            android:textSize="@dimen/font_btn_lll" />
+
+        <TextView
+            android:id="@+id/tv_phone_bill_jifen_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/font_btn_lll" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/mine_credits"
+            android:textColor="#333333"
+            android:textSize="@dimen/font_btn_lll" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/phone_bill_detail_count"
+            android:textColor="@color/e_text_bg_huise_black"
+            android:textSize="@dimen/font_btn_0" />
+
+        <TextView
+            android:id="@+id/tv_phone_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/e_text_bg_huise_black"
+            android:textSize="@dimen/font_btn_0" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_line"
+        android:layout_marginTop="15dp"
+        android:background="@color/line_grey" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/et_phone_bill"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/security_center_phone_hint"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:paddingLeft="15dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/text_grey_color"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/font_btn_0" />
+
+        <TextView
+            android:id="@+id/tv_phone_bill_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/text_grey_color"
+            android:textSize="@dimen/font_btn_0" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_line"
+        android:background="@color/line_grey" />
+
+    <Button
+        android:id="@+id/bt_phone_bill_detail_exchange"
+        android:layout_width="@dimen/btn_width"
+        android:layout_height="@dimen/btn_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/mine_bn_shape_bg"
+        android:enabled="false"
+        android:text="@string/vip_bt_exchange"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_btn_mm" />
+
+</LinearLayout>

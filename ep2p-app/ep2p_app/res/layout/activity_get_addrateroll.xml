@@ -1,0 +1,170 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/e_main_bg_title"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_layout" />
+
+    <LinearLayout
+        android:id="@+id/topRelative"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_bg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/toproll_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/discover_addrate_top_bg" >
+
+            <TextView
+                android:id="@+id/date_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="30dp"
+                android:text="有效期:10天"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_text_lmm" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/date_tv"
+                android:layout_centerHorizontal="true" >
+
+                <TextView
+                    android:id="@+id/jiaxijuan_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1.3%"
+                    android:textColor="#fffe80"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/man_tip_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/jiaxijuan_tv"
+                    android:layout_marginLeft="5dip"
+                    android:layout_toRightOf="@id/jiaxijuan_tv"
+                    android:text="加息券"
+                    android:textColor="#fffe80"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="18dp"
+            android:paddingBottom="14dp"
+            android:orientation="vertical">
+	        <TextView
+	            android:id="@+id/tv_residue_statistical"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_horizontal"
+	            android:layout_marginBottom="12dp"
+	            android:padding="0dp"
+	            android:gravity="center_vertical"
+	            android:text="剩余20/100"
+	            android:textColor="@color/e_main_bg_title"
+	            android:textSize="@dimen/font_btn_ll"
+	            android:visibility="visible" />
+	        <com.beyondsoft.ep2p.view.DayTimerTextView 
+	            android:id="@+id/dttv_residue_times"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_horizontal"
+	            android:layout_marginBottom="12dp"
+	            android:padding="0dp"
+	            android:gravity="center_vertical"
+	            android:text="剩余20/100"
+	            android:textColor="@color/e_main_bg_title"
+	            android:textSize="@dimen/font_btn_ll"
+	            android:visibility="gone"/>
+	        <TextView
+	            android:id="@+id/redbag_check"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_horizontal"
+	            android:padding="0dp"
+	            android:gravity="center_vertical"
+	            android:text="看看所有人的手气 >>"
+	            android:textColor="@color/redbag_check_gray"
+	            android:textSize="@dimen/font_btn_ll" />
+	        <TextView
+	            android:id="@+id/tv_residue_statistical_tb"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_horizontal"
+	            android:layout_marginTop="12dp"
+	            android:padding="0dp"
+	            android:gravity="center_vertical"
+	            android:text="剩余20/100"
+	            android:textColor="@color/e_main_bg_title"
+	            android:textSize="@dimen/font_btn_ll"
+	            android:visibility="gone" />
+	    </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="11dp"
+        android:background="@drawable/discover_addrate_top_line" />
+
+    <ListView 
+        android:id="@+id/lv_get_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="59dp"
+        android:layout_marginRight="59dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="18dp"
+        android:paddingTop="24dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:divider="@color/e_main_bg_title"
+        android:dividerHeight="7dp"
+        android:background="@drawable/bor"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/tv_mianzhe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="免责声明：\n本活动与apple公司无关"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_text_m" />
+
+    <Button
+        android:id="@+id/m_makesure_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/bn_zc_shape"
+        android:gravity="center"
+        android:text="立即领取"
+        android:textColor="@color/e_button_bg" />
+
+</LinearLayout>

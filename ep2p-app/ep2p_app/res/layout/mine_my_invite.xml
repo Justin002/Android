@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_layout_no_right" />
+
+    <LinearLayout
+        android:id="@+id/ll_invent_null"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:visibility="gone"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/invent_null" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_tab"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+         android:visibility="gone"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/mine"
+            android:textColor="@color/text_black_color"
+            android:textSize="@dimen/font_btn_ll" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/mine_cumulative_reward"
+            android:textColor="@color/text_black_color"
+            android:textSize="@dimen/font_btn_ll" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_invent"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:visibility="gone"
+        android:background="@color/line_grey" />
+
+    <ListView
+        android:id="@+id/invite_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/line_grey"
+        android:dividerHeight="1px" >
+    </ListView>
+
+</LinearLayout>

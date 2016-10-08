@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_layout" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="150dip"
+        android:background="@color/blue" >
+
+        <LinearLayout
+            android:id="@+id/ll_bank_card"
+            android:layout_width="fill_parent"
+            android:layout_height="115dip"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="-1dip"
+            android:layout_marginLeft="@dimen/XXHSpace"
+            android:layout_marginRight="@dimen/XXHSpace"
+            android:background="@drawable/icon_bank_card_bg"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/HSpace" >
+
+                <ImageView
+                    android:id="@+id/img_bank_card"
+                    android:layout_width="24dip"
+                    android:layout_height="24dip"
+                    android:layout_margin="@dimen/nomalSpace"
+                    android:src="@drawable/icon_construction_bank" />
+
+                <TextView
+                    android:id="@+id/tv_bank_card_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/HSpace"
+                    android:text="中国建设银行"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_btn_lll" />
+
+                <View
+                    android:layout_width="0dip"
+                    android:layout_height="1dip"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="55dip"
+                    android:layout_height="17.5dip"
+                    android:layout_marginLeft="@dimen/nomalSpace"
+                    android:layout_marginRight="@dimen/HSpace2"
+                    android:background="@drawable/shape_button_bg_blue"
+                    android:gravity="center"
+                    android:text="@string/can_withdrawal"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_text_l" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="@dimen/HSpace"
+                android:layout_marginRight="@dimen/HSpace2"
+                android:background="@color/light_gray_color" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/MSpace"
+                    android:text="***"
+                    android:textColor="@color/e_text_shtz_top"
+                    android:textSize="@dimen/font_title_m" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/MSpace"
+                    android:text="****"
+                    android:textColor="@color/e_text_shtz_top"
+                    android:textSize="@dimen/font_title_m" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/MSpace"
+                    android:text="****"
+                    android:textColor="@color/e_text_shtz_top"
+                    android:textSize="@dimen/font_title_m" />
+
+                <TextView
+                    android:id="@+id/tv_bank_card_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/MSpace"
+                    android:text="2234"
+                    android:textColor="@color/e_text_shtz_top"
+                    android:textSize="@dimen/font_title_m" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@color/font_gray" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_marginTop="@dimen/HSpace"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/HSpace2"
+        android:paddingRight="@dimen/HSpace2" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/available_balance"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/font_btn_lll" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/china_yuan_symbol"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/font_btn_0" />
+
+        <TextView
+            android:id="@+id/tv_availablebalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3445.00"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/font_btn_0" />
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="1dip"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_balance_type"
+            android:layout_width="80dip"
+            android:layout_height="25dip"
+            android:background="@drawable/shape_button_bg_border_selector"
+            android:gravity="center"
+            android:text="@string/balance_type"
+            android:textColor="@color/button_text_color_selector"
+            android:textSize="@dimen/font_btn_0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_balance_type"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:background="@color/font_gray" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="24dip"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:paddingLeft="40dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/HSpace"
+                android:gravity="center"
+                android:text="@string/general_fund"
+                android:textColor="@color/e_text_bg_huise_black"
+                android:textSize="@dimen/font_btn_0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/china_yuan_symbol"
+                android:textColor="@color/dark"
+                android:textSize="@dimen/font_btn_0" />
+
+            <TextView
+                android:id="@+id/tv_commamont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8000.00"
+                android:textColor="@color/dark"
+                android:textSize="@dimen/font_btn_0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="24dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="40dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/HSpace"
+                android:gravity="center"
+                android:text="@string/top_up_fund"
+                android:textColor="@color/e_text_bg_huise_black"
+                android:textSize="@dimen/font_btn_0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/china_yuan_symbol"
+                android:textColor="@color/dark"
+                android:textSize="@dimen/font_btn_0" />
+
+            <TextView
+                android:id="@+id/tv_recharge_detail_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="596.00"
+                android:textColor="@color/dark"
+                android:textSize="@dimen/font_btn_0" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/font_gray" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/HSpace2"
+        android:paddingRight="@dimen/HSpace2" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/withdrawal_money"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/font_btn_lll" />
+
+        <EditText
+            android:id="@+id/et_money"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:cursorVisible="true"
+            android:textCursorDrawable="@null"
+            android:hint="@string/please_input_withdrawal_money"
+            android:inputType="numberDecimal"
+            android:paddingLeft="@dimen/nomalSpace"
+            android:paddingRight="@dimen/nomalSpace"
+            android:singleLine="true"
+            android:textColorHint="@color/dark_gray"
+            android:textColor="@color/dark"
+            android:textSize="@dimen/font_btn_ll" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/china_yuan"
+            android:textColor="@color/dark_gray" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/font_gray" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/HSpace2"
+        android:paddingRight="@dimen/HSpace2" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/withdrawal_poundage"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/font_btn_0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/nomalSpace"
+            android:text="@string/china_yuan_symbol"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/font_btn_0" />
+
+        <TextView
+            android:id="@+id/tv_withdral_fee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.00"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/font_btn_0" />
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="1dip"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/ll_withdrawal_instructions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/MSpace"
+                android:text="@string/withdrawal_instructions"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/font_btn_0" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_doubt" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_next_step"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_marginLeft="40dip"
+        android:layout_marginRight="40dip"
+        android:layout_marginTop="50dip"
+        android:background="@drawable/mine_bn_shape_bg"
+        android:enabled="false"
+        android:text="@string/next_step"
+        android:textColor="@color/white" />
+
+</LinearLayout>

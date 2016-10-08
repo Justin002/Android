@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="112dip"
+        android:background="@drawable/item_list_item_bg_selector"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dip"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/HSpace2"
+            android:paddingRight="@dimen/HSpace2" >
+
+            <TextView
+                android:id="@+id/tv_borrowCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D15110199a"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/font_text_lm" />
+
+            <View
+                android:layout_width="0dip"
+                android:layout_height="1dip"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tv_expireTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2015-09-15"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/font_text_lm" />
+        </LinearLayout>
+
+      
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="80dip"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="3"
+                android:gravity="center_vertical|left"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/HSpace2" >
+
+                  <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:orientation="horizontal" >
+                    <TextView
+                        android:id="@+id/tv_interestMoney"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5000"
+                        android:textColor="@color/orange"
+                        android:textSize="@dimen/font_btn_x" />
+                   
+                    <TextView
+                        android:id="@+id/tv_interestMoney_float"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" .00（元）"
+                        android:textColor="@color/orange"
+                        android:layout_marginLeft="-5dip"
+                        android:textSize="@dimen/font_btn_l" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/money_amount"
+                    android:textColor="@color/e_text_bg_huise_black"
+                    android:textSize="@dimen/font_text_lm"
+                    android:layout_marginTop="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:orientation="vertical"
+                android:paddingRight="@dimen/XXHSpace" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center|right"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_period_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1/12"
+                        android:textColor="@color/text_black_color"
+                        android:textSize="@dimen/font_btn_x" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/period_time"
+                        android:textColor="@color/e_text_bg_huise_black"
+                        android:textSize="@dimen/font_text_lm"
+                        android:layout_marginTop="5dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

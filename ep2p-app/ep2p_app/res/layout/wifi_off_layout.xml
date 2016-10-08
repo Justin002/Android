@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_wifi_off_ui"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebeff1"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/wifi_off_icon"
+        android:textColor="@color/e_wifi_off_text"
+        android:textSize="18sp"
+        android:gravity="center_horizontal"
+        android:drawablePadding="20dp"
+        android:text="@string/e_txt_off_wifi" />
+
+    <TextView
+        android:id="@+id/wifi_load_again"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:text="@string/e_txt_reload_data"
+        android:layout_marginLeft="3dp"
+        android:textColor="@color/e_pu_buttom"
+        android:gravity="center_horizontal"
+        android:textSize="16sp" />
+
+</LinearLayout>

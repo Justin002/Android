@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+
+    <corners
+        android:bottomLeftRadius="@dimen/nomalSpace"
+        android:bottomRightRadius="@dimen/nomalSpace"
+        android:topLeftRadius="@dimen/nomalSpace"
+        android:topRightRadius="@dimen/nomalSpace" />
+
+    <solid android:color="@color/e_main_bg_title_press" />
+
+</shape>

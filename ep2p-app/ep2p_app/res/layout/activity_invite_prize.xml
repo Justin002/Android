@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_layout_right_txt" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/invite_friend_btn" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@drawable/invite_prize_ac_bg" >
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/invite_code_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/orange"
+                        android:textSize="@dimen/font_title_h"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:gravity="center"
+                        android:text="我的推荐邀请码"
+                        android:textColor="@color/e_main_bg_title"
+                        android:textSize="@dimen/font_btn_lll" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/prize_strategy"
+                    android:layout_marginTop="28dp"
+                    android:paddingLeft="25dp"
+                    android:textColor="@color/e_main_bg_title"
+                    android:textSize="@dimen/font_btn_lll" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="11dp"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp"
+                    android:text="@string/prize_strategy1"
+                    android:textColor="@color/e_text_bg_huise_black"
+                    android:textSize="@dimen/font_btn_0" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="6dp"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp"
+                    android:text="@string/prize_strategy2"
+                    android:textColor="@color/e_text_bg_huise_black"
+                    android:textSize="@dimen/font_btn_0" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/prize_strategy3"
+                    android:paddingTop="6dp"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp"
+                    android:textColor="@color/e_text_bg_huise_black"
+                    android:textSize="@dimen/font_btn_0" />
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/invite_friend_btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/mine_bn_shape_bg2"
+            android:textColor="@color/white"
+            android:text="@string/prize_now"
+            android:textSize="@dimen/font_btn_mm" />
+    </RelativeLayout>
+
+</LinearLayout>

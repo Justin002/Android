@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_layout_no_right" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_line"
+        android:layout_marginTop="@dimen/mine_setting_marginTop"
+        android:background="@color/line_grey" />
+
+    <RelativeLayout
+        android:id="@+id/mine_clear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mine_height"
+        android:background="@drawable/item_list_item_bg_selector"
+        android:paddingLeft="@dimen/mine_loginout_padding"
+        android:paddingRight="@dimen/mine_loginout_padding" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/mine_setting_clear_cache_label"
+            android:textColor="@color/text_black_color"
+            android:textSize="@dimen/font_btn_ll" />
+
+        <TextView
+            android:id="@+id/use_space_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/head_padding_top"
+            android:layout_toLeftOf="@+id/right_arrow_tv"
+            android:text="0M"
+            android:textColor="@color/e_main_bg_title"
+            android:textSize="@dimen/font_btn_lll" />
+
+        <ImageView
+            android:id="@+id/right_arrow_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/item_arrow_right" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_line"
+        android:background="@color/line_grey" />
+
+    <RelativeLayout
+        android:id="@+id/mine_feedback_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mine_height"
+        android:background="@drawable/item_list_item_bg_selector"
+        android:paddingLeft="@dimen/mine_loginout_padding"
+        android:paddingRight="@dimen/mine_loginout_padding" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/mine_setting_feedback"
+            android:textColor="@color/text_black_color"
+            android:textSize="@dimen/font_btn_ll" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/item_arrow_right" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_line"
+        android:background="@color/line_grey" />
+
+    <RelativeLayout
+        android:id="@+id/mine_about_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mine_height"
+        android:background="@drawable/item_list_item_bg_selector"
+        android:paddingLeft="@dimen/mine_loginout_padding"
+        android:paddingRight="@dimen/mine_loginout_padding" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/mine_setting_about"
+            android:textColor="@color/text_black_color"
+            android:textSize="@dimen/font_btn_ll" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/item_arrow_right" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_line"
+        android:background="@color/line_grey" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_line"
+        android:layout_marginTop="@dimen/mine_loginout_marginTop"
+        android:background="@color/line_grey" />
+
+    <RelativeLayout
+        android:id="@+id/mine_loginout_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mine_height"
+        android:background="@drawable/item_list_item_bg_selector"
+        android:paddingLeft="@dimen/mine_loginout_padding"
+        android:paddingRight="@dimen/mine_loginout_padding" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/mine_setting_loginout"
+            android:textColor="@color/e_main_bg_title"
+            android:textSize="@dimen/font_btn_ll" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_line"
+        android:background="@color/line_grey" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="9sp"
+            android:text="@string/mine_copyright"
+            android:layout_centerInParent="true"
+            android:drawablePadding="10dp"
+            android:textColor="@color/e_button_bg_off"
+            android:drawableTop="@drawable/setting_bg" />
+    </RelativeLayout>
+
+</LinearLayout>

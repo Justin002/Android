@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_dialog_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/app_dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="22dp"
+        android:gravity="center"
+        android:text="提示"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/app_dialog_descri_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textColor="@color/e_text_bg_black"
+        android:text="为了您的资金安全，暂不支持更换银"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/app_dialog_descri_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textColor="@color/e_text_bg_black"
+        android:text="行卡，如遇特殊情况，请联系客服变更"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/app_dialog_descri_03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:textColor="@color/e_text_bg_black"
+        android:text="4009-998-992"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="20dp"
+        android:background="@color/dialog_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/app_dialog_button1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F9F9F9"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="好的"
+                android:textColor="@color/e_main_bg_title"
+                android:textSize="19sp"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

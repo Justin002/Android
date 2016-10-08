@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/e_main_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/il_iclude"
+        layout="@layout/title_layout" />
+
+    <!-- 定义图表的占位符 -->
+
+    <include layout="@layout/layout_product_details_top" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_line"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/tv_news_title"
+                android:background="@drawable/page_img_xian_03" />
+
+            <TextView
+                android:id="@+id/tv_news_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_vertical"
+                android:singleLine="true"
+                android:text="@string/txt_tv_experience"
+                android:textColor="@color/e_text_bg_huise_black"
+                android:textSize="@dimen/font_text_m" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/title_line"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_toRightOf="@+id/tv_news_title"
+                android:background="@drawable/page_img_xian_03" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_line"
+        android:background="@color/e_style_hxian" />
+
+    <TextView
+        android:id="@+id/tv_exp_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="13dp"
+        android:textColor="@color/e_text_bg_huise_black" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_line"
+        android:background="@color/e_style_hxian" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/XHSpace"
+        android:background="@color/e_main_bg"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:button="@drawable/checkbox_selector"
+            android:checked="true"
+            android:text="@string/txt_input_agree"
+            android:textSize="14sp"
+            android:textColor="@color/e_text_bg_huise_black" />
+
+        <TextView
+            android:id="@+id/tv_reg_xy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_tv_service_agreement"
+            android:textSize="14sp"
+            android:textColor="@color/e_text_bg_huise_black" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/bn_lj_join"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/blue"
+            android:text="@string/txt_bn_lj_join"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_btn_m" />
+    </RelativeLayout>
+
+</LinearLayout>

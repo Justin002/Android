@@ -1,0 +1,79 @@
+<resources>
+
+    <!-- title(标题栏) -->
+    <dimen name="title_height">48dp</dimen>
+    <dimen name="title_left_padding">15dp</dimen>
+    
+    <dimen name="btn_width">280dp</dimen>
+    <dimen name="btn_height">44dp</dimen>
+   
+    <dimen name="nomalSpace">5dip</dimen>
+    <dimen name="LSpace">2dip</dimen>
+    <dimen name="MSpace">8dip</dimen>
+    <dimen name="HSpace">10dip</dimen>
+    <dimen name="HSpace2">15dip</dimen>
+    <dimen name="XHSpace">20dip</dimen>
+    <dimen name="XXHSpace">25dip</dimen>
+    <dimen name="font_title_l">20sp</dimen>
+    <dimen name="font_title_mm">24sp</dimen>
+    <dimen name="font_title_m">25sp</dimen>
+    <dimen name="font_title_h">30sp</dimen>
+    <dimen name="font_title_hh">40sp</dimen>
+    <dimen name="font_text_s">8sp</dimen>
+    <dimen name="font_text_ll">10sp</dimen>
+    <dimen name="font_text_l">12sp</dimen>
+    <dimen name="font_text_lmm">13sp</dimen>
+    <dimen name="font_text_lm">13.5sp</dimen>
+    <dimen name="font_text_m">15sp</dimen>
+    <dimen name="font_text_h">18sp</dimen>
+    <dimen name="font_btn_0">14sp</dimen>
+    <dimen name="font_btn_l">15sp</dimen>
+    <dimen name="font_btn_lll">16sp</dimen>
+    <dimen name="font_btn_ll">17sp</dimen>
+    <dimen name="font_btn_m">18sp</dimen>
+    <dimen name="font_btn_mm">19sp</dimen>
+    <dimen name="font_btn_h">20sp</dimen>
+    <dimen name="font_btn_x">22sp</dimen>
+    <dimen name="title_line">1px</dimen>
+
+    <!-- 我的 -->
+    <dimen name="head_padding_left">16dp</dimen>
+    <dimen name="head_padding_top">10dp</dimen>
+    <dimen name="head_txt_padding_left">12dp</dimen>
+    <dimen name="head_width">32dp</dimen>
+    <dimen name="top_bg_height">213dp</dimen>
+    
+    <dimen name="mine_item_padding">23dp</dimen>
+    <dimen name="mine_item_txt_padding">25dp</dimen>
+    <dimen name="mine_height">45dp</dimen>
+    <dimen name="mine_login_top_height">150dp</dimen>
+    <dimen name="mine_driver_height">5dp</dimen>
+    
+    
+    <!-- 我的-设置 -->
+    <dimen name="mine_loginout_marginTop">21dp</dimen>
+    <dimen name="mine_loginout_padding">22dp</dimen>
+    <dimen name="mine_setting_marginTop_feedback">25dp</dimen>
+    <dimen name="mine_setting_marginTop">26dp</dimen>
+    <dimen name="mine_feedback_height">100dp</dimen>
+    <dimen name="mine_invite_item_height">48dp</dimen>
+    <dimen name="mine_invite_item_height_h">96dp</dimen>
+    <dimen name="dp_5">5dp</dimen>
+    <dimen name="dp_8">8dp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="dp_12">12dp</dimen>
+    <dimen name="dp_14">14dp</dimen>
+    <dimen name="dp_16">16dp</dimen>
+    <dimen name="dp_18">18dp</dimen>
+    <dimen name="dp_20">20dp</dimen>
+    <dimen name="dp_22">22dp</dimen>
+     <dimen name="sp_5">5sp</dimen>
+    <dimen name="sp_8">8sp</dimen>
+    <dimen name="sp_10">10dp</dimen>
+    <dimen name="sp_12">12dp</dimen>
+    <dimen name="sp_14">14dp</dimen>
+    <dimen name="sp_16">16dp</dimen>
+    <dimen name="sp_18">18dp</dimen>
+    <dimen name="sp_20">20dp</dimen>
+
+</resources>

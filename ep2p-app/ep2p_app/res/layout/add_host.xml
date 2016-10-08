@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical" >
+    
+    <EditText 
+        android:id="@+id/host_et"
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:text="http://183.15.254.235:8081/api"
+        android:textColor="#000000"
+        android:layout_height="30dp"/>
+    
+     <Button 
+        android:id="@+id/ok"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="确定"
+        android:textColor="#000000"
+        android:background="#ffffff"
+        android:layout_height="wrap_content"/>
+    
+
+</LinearLayout>

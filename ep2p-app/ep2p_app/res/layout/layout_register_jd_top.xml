@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_line"
+        android:background="@color/e_style_hxian" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp" >
+
+        <ImageView
+            android:id="@+id/iv_zc_flow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/app_name"
+            android:gravity="center_horizontal"
+            android:src="@drawable/e_news_img_check1_03" />
+
+        <TextView
+            android:id="@+id/tv_fenge_line1"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/iv_zc_flow2"
+            android:layout_toRightOf="@+id/iv_zc_flow1"
+            android:background="@color/e_style_register_jd_line" />
+
+        <ImageView
+            android:id="@+id/iv_zc_flow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/app_name"
+            android:gravity="center_horizontal"
+            android:src="@drawable/e_news_check2_03" />
+
+        <TextView
+            android:id="@+id/tv_fenge_line2"
+            android:layout_width="wrap_content"
+            android:layout_height="4dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_toLeftOf="@+id/iv_zc_flow3"
+            android:layout_toRightOf="@+id/iv_zc_flow2"
+            android:background="@color/e_style_register_jd_line" />
+
+        <ImageView
+            android:id="@+id/iv_zc_flow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/app_name"
+            android:gravity="center_horizontal"
+            android:src="@drawable/e_news_check2_03" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/tv_text_zc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:paddingLeft="18dp"
+            android:text="@string/login_right_txt"
+            android:textColor="@color/e_button_bg"
+            android:textSize="@dimen/font_btn_lll" />
+
+        <TextView
+            android:id="@+id/tv_text_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="@string/txt_tv_zc_rz"
+            android:textColor="@color/e_button_bg"
+            android:textSize="@dimen/font_btn_lll" />
+
+        <TextView
+            android:id="@+id/tv_text_tz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center_horizontal"
+            android:paddingRight="18dp"
+            android:text="@string/txt_tv_zc_tz"
+            android:textColor="@color/e_button_bg"
+            android:textSize="@dimen/font_btn_lll" />
+    </RelativeLayout>
+
+</LinearLayout>

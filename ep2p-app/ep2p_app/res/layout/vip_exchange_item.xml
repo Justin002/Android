@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="94dp"
+        android:background="@drawable/item_list_item_bg_selector" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_centerVertical="true"
+            android:background="@color/e_main_bg_title"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/tv_vip_year"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:drawableTop="@drawable/vip_icon_item_change"
+                android:gravity="center_horizontal"
+                android:paddingTop="10dp"
+                android:text="1年"
+                android:textSize="@dimen/font_btn_0"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/swore_right_mine" />
+
+        <TextView
+            android:id="@+id/tv_vip_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/relativeLayout1"
+            android:text="-2000"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/font_btn_lll" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           	android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_vip_count"
+            android:text="积分"
+            android:textColor="@color/e_text_bg_black"
+            android:textSize="@dimen/font_btn_lll" />
+    </RelativeLayout>
+
+</LinearLayout>

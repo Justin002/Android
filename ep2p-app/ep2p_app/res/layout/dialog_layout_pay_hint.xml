@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/apply_key_board"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/app_dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="交易密码错误"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_btn_ll" />
+
+    <TextView
+        android:id="@+id/app_dialog_descri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:textColor="@color/e_text_bg_black"
+        android:textSize="@dimen/font_btn_0" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="20dp"
+        android:background="#d5d5d5" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/app_dialog_button1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:background="@null"
+                android:text="忘记密码"
+                android:textSize="@dimen/font_btn_mm"
+                android:textColor="@color/e_button_bg"/>
+
+            <Button
+                android:id="@+id/app_dialog_button2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:background="@null"
+                android:text="重试"
+               	android:textSize="@dimen/font_btn_mm"
+                android:textColor="@color/e_button_bg" />
+        </LinearLayout>
+
+   <!--      <View
+            android:id="@+id/app_dialog_view"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="#9b9e9e" /> -->
+    </RelativeLayout>
+
+</LinearLayout>

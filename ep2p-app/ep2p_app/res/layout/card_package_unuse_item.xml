@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/topRelative"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_bg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/toproll_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/t_img_zc_ttyj_04" >
+
+            <TextView
+                android:id="@+id/date_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_text_lmm" />
+
+            <TextView
+                android:id="@+id/card_tv_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/date_tv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="仅限使用于体验标"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_text_m" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:layout_marginTop="15dp"
+                android:layout_above="@id/card_tv_detail"
+                android:layout_centerHorizontal="true" >
+
+                <TextView
+                    android:id="@+id/jiaxijuan_tv_unuse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="888.00"
+                     android:layout_marginLeft="20dp"
+                    android:textColor="#fff"
+                    android:textSize="25sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/jiaxijuan_tv_unuse"
+                    android:layout_alignBottom="@+id/jiaxijuan_tv_unuse"
+                    android:layout_alignParentLeft="true"
+                    android:text="￥"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+             
+            </RelativeLayout>
+
+            <com.beyondsoft.ep2p.view.RotateTextView
+                android:id="@+id/img_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center_horizontal"
+                android:layout_alignParentTop="true"
+                 android:paddingLeft="28dp"
+                android:paddingTop="1dp"
+                android:text="体验券"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_text_lmm"
+                android:background="@drawable/img_card_unuse" />
+
+            <Button
+                android:id="@+id/bt_use"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignBaseline="@+id/date_tv"
+                android:layout_alignBottom="@+id/date_tv"
+                android:layout_alignLeft="@+id/img_card"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bt_guoqi"
+                android:text="使用"
+                android:textSize="@dimen/font_text_lmm" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

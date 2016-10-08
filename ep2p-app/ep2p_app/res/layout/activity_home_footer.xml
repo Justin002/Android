@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/e_main_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/e_main_bg" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_bottonm_invest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/page_img_sytz_03"
+                android:gravity="center_horizontal"
+                android:text="@string/homepage_button_invest"
+                android:textColor="@color/e_button_bg_off"
+                android:textSize="@dimen/font_text_l" />
+
+            <TextView
+                android:id="@+id/tv_bottonm_guarantee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/page_img_dbz_03"
+                android:gravity="center_horizontal"
+                android:text="@string/homepage_button_guarantee"
+                android:textColor="@color/e_button_bg_off"
+                android:textSize="@dimen/font_text_l" />
+
+            <TextView
+                android:id="@+id/tv_bottonm_safety"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/page_img_jyaq_03"
+                android:gravity="center_horizontal"
+                android:text="@string/homepage_button_safety"
+                android:textColor="@color/e_button_bg_off"
+                android:textSize="@dimen/font_text_l" />
+
+            <TextView
+                android:id="@+id/tv_bottonm_escort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/page_img_gdhh_03"
+                android:gravity="center_horizontal"
+                android:text="@string/homepage_button_escort"
+                android:textColor="@color/e_button_bg_off"
+                android:textSize="@dimen/font_text_l" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

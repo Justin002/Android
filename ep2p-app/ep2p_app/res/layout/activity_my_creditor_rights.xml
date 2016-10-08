@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_layout_no_right" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_cerditor_rights_have"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:drawableBottom="@drawable/tab_index_selector"
+            android:gravity="center"
+            android:text="@string/cerditor_rights_have"
+            android:textColor="@color/text_black_color"
+            android:textSize="@dimen/font_text_h" />
+
+        <TextView
+            android:id="@+id/tv_transf_doing"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="0.5dip"
+            android:layout_marginRight="0.5dip"
+            android:layout_weight="1"
+            android:drawableBottom="@drawable/tab_index_selector"
+            android:gravity="center"
+            android:text="@string/cerditor_rights_transf_doing"
+            android:textColor="@color/text_black_color"
+            android:textSize="@dimen/font_text_h" />
+
+        <TextView
+            android:id="@+id/tv_transf_done"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:drawableBottom="@drawable/tab_index_selector"
+            android:gravity="center"
+            android:text="@string/cerditor_rights_transf_done"
+            android:textColor="@color/text_black_color"
+            android:textSize="@dimen/font_text_h" />
+    </LinearLayout>
+
+    <com.beyondsoft.ep2p.view.SpecialViewPager
+        android:id="@+id/svp_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="@dimen/HSpace" >
+    </com.beyondsoft.ep2p.view.SpecialViewPager>
+
+</LinearLayout>

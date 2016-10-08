@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+   <!--  <ListView
+        android:id="@+id/lv_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@color/transparent"
+        android:dividerHeight="@dimen/HSpace" >
+    </ListView> -->
+    
+        <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+         <include 
+            android:id="@+id/ll_wifi_off"
+            layout="@layout/wifi_off_layout"
+            android:visibility="gone"/>
+        
+        <include 
+            android:id="@+id/ll_null_data"
+            layout="@layout/null_data_layout"
+            android:visibility="gone"/>
+        
+       <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/lv_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@color/transparent"
+        android:dividerHeight="@dimen/HSpace" >
+       </com.handmark.pulltorefresh.library.PullToRefreshListView>
+                          
+    </FrameLayout>
+
+</LinearLayout>

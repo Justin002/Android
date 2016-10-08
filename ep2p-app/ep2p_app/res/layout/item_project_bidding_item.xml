@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rpb="http://schemas.android.com/apk/res/com.beyondsoft.ep2p"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="132dip"
+        android:background="@drawable/item_list_item_bg_selector"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dip"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/HSpace2"
+            android:paddingRight="@dimen/HSpace2" >
+
+            <TextView
+                android:id="@+id/tv_borrowCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D15110199a"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/font_text_lm" />
+
+            <View
+                android:layout_width="0dip"
+                android:layout_height="1dip"
+                android:layout_weight="1" />
+
+            
+
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="70dip"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_borrowRate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20%"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/font_btn_x" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/year_rate"
+                    android:textColor="@color/e_text_huise_buttom"
+                    android:textSize="@dimen/font_text_lm" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_borDeadline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12个月"
+                    android:textColor="@color/text_black_color"
+                    android:textSize="@dimen/font_btn_x" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/time_limit"
+                    android:textColor="@color/e_text_huise_buttom"
+                    android:textSize="@dimen/font_text_lm" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_borrowMoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="50万"
+                    android:textColor="@color/text_black_color"
+                    android:textSize="@dimen/font_btn_x" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/money_amount"
+                    android:textColor="@color/e_text_huise_buttom"
+                    android:textSize="@dimen/font_text_lm" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <com.beyondsoft.ep2p.view.RoundProgressBar
+                    android:id="@+id/rpv_rate"
+                    android:layout_width="60dip"
+                    android:layout_height="60dip"
+                    android:layout_centerInParent="true"
+                    rpb:max="100"
+                    rpb:roundColor="@color/app_bg"
+                    rpb:roundProgressColor="@color/orange"
+                    rpb:roundWidth="2.5dip"
+                    rpb:startAnger = "0"
+                    rpb:textColor="@color/orange"
+                    rpb:textIsDisplayable="true"
+                    rpb:textSize="@dimen/font_text_h" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/app_bg" />
+          <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/XHSpace"
+            >
+
+            <TextView
+                android:id="@+id/tv_allinvsetMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已投金额： 1000.00元"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/font_text_lm" />
+
+            <View
+                android:layout_width="0dip"
+                android:layout_height="1dip"
+                android:layout_weight="1" />
+
+          
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

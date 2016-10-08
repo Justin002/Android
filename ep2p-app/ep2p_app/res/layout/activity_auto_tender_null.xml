@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<LinearLayout android:orientation="vertical" 
+	android:background="#ffffff" 
+	android:layout_height="match_parent" 
+	android:layout_width="match_parent" 
+	xmlns:android="http://schemas.android.com/apk/res/android"> 
+		<include android:layout_height="45dp" 
+			android:layout_width="match_parent" 
+			layout="@layout/title_layout"/>  
+		<View android:background="#bbbbbb" 
+			android:layout_height="@dimen/title_line" 
+			android:layout_width="match_parent"/> 
+		<LinearLayout android:layout_height="match_parent" 
+			android:layout_width="match_parent"
+			android:background="@color/e_progressbar_bg_null"
+			android:orientation="vertical"
+			android:gravity="center_horizontal"
+			android:id="@+id/auto_tender_rl"> 
+			
+		    <ImageView 
+		        android:id="@+id/iv_auto_tender_bg_icon"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="45dp"
+		        android:src="@drawable/mine_auto_tender_null"/>
+		    
+		    <TextView 
+		        style="@style/AutoTender.GrayTextView"
+		        android:layout_marginTop="27dp"
+		        android:text="@string/mine_auto_tender_null_text"
+		        android:textSize="16sp"
+		        android:textColor="#CCCDCD"/>
+		    
+		    <TextView 
+		        style="@style/AutoTender.GrayTextView"
+		        android:text="@string/mine_auto_tender_null_text_tishi"
+		        android:textSize="16sp"
+		        android:textColor="#CCCDCD"/>
+		</LinearLayout> 
+</LinearLayout>

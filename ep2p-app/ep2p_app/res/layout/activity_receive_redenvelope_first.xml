@@ -1,0 +1,113 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="@drawable/discover_r_chai_bg_ylq"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="2"
+        android:padding="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/discover_r_chai_bg_ylq_heard"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="3"
+        android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="12dp"
+            android:gravity="center_vertical"
+            android:padding="0dp"
+            android:text="剩余20/100"
+            android:textColor="@color/orange_discover"
+            android:textSize="@dimen/font_text_h"
+            android:visibility="visible" />
+
+        <com.beyondsoft.ep2p.view.DayTimerTextView
+            android:id="@+id/dttv_residue_times"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="12dp"
+            android:gravity="center_vertical"
+            android:padding="0dp"
+            android:text="活动尚未开始，同志仍需等待"
+            android:textColor="@color/orange_discover"
+            android:textSize="@dimen/font_btn_ll"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/redbag_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical"
+            android:padding="0dp"
+            android:text="看看所有人的手气 >>"
+            android:textColor="@color/dis_r_zhongse"
+            android:textSize="@dimen/font_text_h" />
+
+        <TextView
+            android:id="@+id/tv_residue_statistical_tb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical"
+            android:padding="0dp"
+            android:text="剩余20/100"
+            android:textColor="@color/e_main_bg_title"
+            android:textSize="@dimen/font_btn_ll"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_get_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="59dp"
+        android:layout_marginRight="59dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/tips"
+        android:divider="@color/dis_r_shenghong"
+        android:dividerHeight="7dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="24dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/tv_mianzhe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="免责声明：\n本活动与apple公司无关"
+        android:textColor="@color/dis_r_zhongse"
+        android:textSize="@dimen/font_text_m" />
+    </LinearLayout>
+
+</LinearLayout>

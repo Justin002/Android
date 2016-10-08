@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="10dp" >
+
+    <ImageView
+        android:id="@+id/pinglun_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/discover_p_head" />
+
+    <TextView
+        android:id="@+id/pinglun_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/pinglun_img"
+        android:layout_toRightOf="@id/pinglun_img"
+        android:text="徐赫强"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/pinglun_time"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pinglun_name"
+        android:layout_toRightOf="@id/pinglun_img"
+        android:text="5天前"
+        android:textColor="@color/gray"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/pinglun_neirong"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pinglun_time"
+        android:layout_toRightOf="@id/pinglun_img"
+        android:text="为了未来更好的自己为了未来更好的自己为了未来更好的自己为了未来更好的自己为了未来更好的自己"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+</RelativeLayout>

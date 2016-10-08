@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_layout_no_right" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/HSpace2"
+                android:background="@color/white"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/projectdetail"
+                  
+                    >
+                </ImageView>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="28dip"
+                android:textColor="@color/dark_gray"
+              android:gravity="center_vertical"
+               android:textSize="@dimen/font_text_h"
+                android:paddingLeft="@dimen/MSpace"
+                android:text="转让信息"
+                />
+              </LinearLayout>
+
+             <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/HSpace2"
+                    android:paddingRight="@dimen/HSpace2" >
+
+                 <ImageView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/item_line"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/HSpace"
+                        android:text="转让本金"
+                        android:textColor="@color/e_text_huise_buttom"
+                        android:textSize="@dimen/font_text_h" />
+
+                    <View
+                        android:layout_width="0dip"
+                        android:layout_height="1dip"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/tv_transfer_capital"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="19830.00元"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/font_text_h" />
+                </LinearLayout>
+                
+             
+             
+               <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/HSpace2"
+                    android:paddingRight="@dimen/HSpace2" >
+
+                      <ImageView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/item_line"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/HSpace"
+                        android:text="转让价格"
+                        android:textColor="@color/e_text_huise_buttom"
+                        android:textSize="@dimen/font_text_h" />
+
+                    <View
+                        android:layout_width="0dip"
+                        android:layout_height="1dip"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/tv_transfer_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="200000.00"
+                        android:textColor="@color/orange"
+                        android:textSize="@dimen/font_text_h" />
+                </LinearLayout>
+               
+               <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/HSpace2"
+                    android:paddingRight="@dimen/HSpace2" >
+                    <ImageView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/item_line"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/HSpace"
+                        android:text="转让手续费"
+                        android:textColor="@color/e_text_huise_buttom"
+                        android:textSize="@dimen/font_text_h" />
+
+                    <View
+                        android:layout_width="0dip"
+                        android:layout_height="1dip"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/tv_transfer_fee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="50.0元"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/font_text_h" />
+                </LinearLayout>
+               
+               
+             
+               <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/HSpace2"
+                    android:paddingRight="@dimen/HSpace2" >
+
+                   <ImageView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/item_line"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/HSpace"
+                        android:text="转让时效"
+                        android:textColor="@color/e_text_huise_buttom"
+                        android:textSize="@dimen/font_text_h" />
+
+                    <View
+                        android:layout_width="0dip"
+                        android:layout_height="1dip"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="24小时"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/font_text_h" />
+                </LinearLayout>
+                
+               
+             
+               
+            
+         <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                   
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/HSpace2"
+                    android:paddingRight="@dimen/HSpace2" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="24小时内无人购买，系统将自动下架转让"
+                        android:textColor="@color/e_text_huise_buttom"
+                        android:textSize="@dimen/font_text_m" />
+
+                   
+
+                  
+                </LinearLayout>
+                
+         <!--    <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="@color/line_grey" />
+
+           
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                
+                android:padding="15dip"
+                android:lineSpacingMultiplier="1.5"
+                android:text="@string/transf_hint"
+                android:background="@color/white"
+                android:textColor="@color/e_text_shtz_buttom"
+                android:textSize="@dimen/font_text_lm" />
+
+            <View
+                android:layout_width="1dip"
+                android:layout_height="0dip"
+                android:layout_weight="1" /> -->
+
+           <!--  <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/XXHSpace"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/checkbox_selector"
+                    android:checked="true" />
+
+                <TextView
+                    android:id="@+id/tv_cerditor_rights_transf_agreement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/nomalSpace"
+                    android:text="@string/cerditor_rights_transf_agreement"
+                    android:textColor="@color/e_text_bg_huise_black"
+                    android:textSize="@dimen/font_text_lm" />
+            </LinearLayout> -->
+
+            <Button
+                android:id="@+id/bt_ensure_transf_next"
+                android:layout_width="fill_parent"
+                android:layout_height="44dip"
+                 android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/shape_button_bg_rectangle_blue"
+                android:text="确认转让"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

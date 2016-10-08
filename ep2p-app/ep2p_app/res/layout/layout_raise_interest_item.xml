@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/t_img_zc_ttyj_03"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_experience"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:textColor="#fffe80"
+            android:textSize="32sp"/>
+
+        <TextView
+            android:id="@+id/tv_only_experience"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_experience"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            style="@style/txt_zc_text3"
+            android:text="@string/txt_tv_only_experience3" />
+
+        <ImageView android:id="@+id/tv_image_ui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_toLeftOf="@+id/tv_only_experience"
+            android:src="@drawable/e_image_jaixiq_03"
+            android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_experience_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            style="@style/txt_zc_text3"
+            android:textSize="12sp"
+            android:layout_centerInParent="true"
+            android:gravity="bottom"/>
+        
+        <CheckBox
+            android:id="@+id/bn_experience_sy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:button="@null"
+            android:layout_marginBottom="10dp"
+            android:focusable="false" 
+            android:clickable="false"
+            android:background="@drawable/bn_shape_checkbox"
+            android:focusableInTouchMode="false"/>
+    </RelativeLayout>
+
+</LinearLayout>

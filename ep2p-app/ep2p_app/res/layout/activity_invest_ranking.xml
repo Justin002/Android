@@ -1,0 +1,156 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_layout" />
+
+    <RelativeLayout
+        android:id="@+id/first_item_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/e_main_bg_title"
+        android:paddingBottom="30dp"
+        android:paddingTop="30dp" >
+
+        <RelativeLayout
+            android:id="@+id/discover_r_one_rl"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:background="@drawable/discover_r_one_bg" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/discover_r_one_bottom" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/discover_r_two_rl"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_alignBottom="@id/discover_r_one_rl"
+            android:layout_toLeftOf="@id/discover_r_one_rl"
+            android:background="@drawable/discover_r_two_bg" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/discover_r_two_bottom" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/discover_r_three_rl"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_alignBottom="@id/discover_r_one_rl"
+            android:layout_toRightOf="@id/discover_r_one_rl"
+            android:background="@drawable/discover_r_three_bg" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/discover_r_three_bottom" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/lv_content"
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:scrollbars="none"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@color/line_grey"
+        android:dividerHeight="0dp" >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/more_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:background="@drawable/dis__btn_more_selector" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_16"
+                android:text="展开全部"
+                android:textColor="@color/e_text_huise_buttom"
+                android:textSize="@dimen/font_btn_0" />
+
+         
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ziji_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_list_item_bg_selector" >
+
+            <TextView
+                android:id="@+id/e_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/dp_16"
+                android:layout_marginLeft="12dip"
+                android:layout_marginTop="@dimen/dp_16"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/font_text_m" />
+
+            <ImageView
+                android:id="@+id/iv_one"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/dp_16"
+                android:layout_marginLeft="37dip"
+                android:layout_marginTop="@dimen/dp_16"
+                android:scaleType="centerCrop"
+                android:src="@drawable/discover_p_head" />
+
+            <TextView
+                android:id="@+id/e_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/dp_16"
+                android:layout_marginLeft="5dip"
+                android:layout_marginTop="@dimen/dp_16"
+                android:layout_toRightOf="@id/iv_one"
+                android:text="我"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/font_text_lmm" />
+
+            <TextView
+                android:id="@+id/e_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/dp_16"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="@dimen/dp_16"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/font_btn_lll" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

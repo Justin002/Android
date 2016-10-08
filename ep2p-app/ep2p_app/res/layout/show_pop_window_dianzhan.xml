@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#66000000" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/thumb_up_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"    
+            android:background="@drawable/bottom_layout_round_white"     
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_dianzhan_attention"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="17dp"
+                android:drawablePadding="8dp"
+                android:drawableRight="@drawable/username_delete"
+                android:text="@string/no_attention"
+                android:textColor="@color/text_grey_color"
+                android:textSize="@dimen/font_btn_0" />
+
+            <ImageView
+                android:id="@+id/pinglun_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/discover_w_hua" />
+
+            <TextView
+                android:id="@+id/man_tip_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="@string/thumb_up_tips"
+                android:textColor="@color/dark"
+                android:textSize="@dimen/font_btn_ll" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:text="您通过点赞获得 积分+5"
+                android:textColor="@color/orange"
+                android:layout_marginBottom="36dp"
+                android:textSize="@dimen/font_btn_0" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/iknow_tv"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"     
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/mine_bn_shape_bg4"
+            android:gravity="center"
+            android:text="我知道了"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_btn_mm" />
+    </LinearLayout>
+
+</RelativeLayout>

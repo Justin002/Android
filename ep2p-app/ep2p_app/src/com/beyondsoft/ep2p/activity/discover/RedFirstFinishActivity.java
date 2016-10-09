@@ -33,12 +33,9 @@ public class RedFirstFinishActivity extends BaseActivity implements OnClickListe
 
 	@Override
 	public void onClick(View v) {
-		switch (v.getId()) {
-		case R.id.tv_look_redbag_check:
+		int id = v.getId();
+		if (id == R.id.tv_look_redbag_check) {
 			pushActivity(RedResultFinishResultActivity.class);
-			break;
-
-	
 		}
 	}
 

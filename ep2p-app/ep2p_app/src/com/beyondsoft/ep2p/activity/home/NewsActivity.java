@@ -59,7 +59,7 @@ public class NewsActivity extends BaseActivity
     private RelativeLayout rl_layout_null;//空数据的UI
     private LinearLayout ll_wifi_off_ui;//无wifi的UI
     private TextView wifi_load_again;
-//    private PullToRefreshListView mList_notice;
+    private PullToRefreshListView mList_notice;
     private NewsListAdapter<NewsCenterList> mNoticeListAdapter;
     private List<NewsCenterList> mList = new ArrayList<NewsCenterList>();
 

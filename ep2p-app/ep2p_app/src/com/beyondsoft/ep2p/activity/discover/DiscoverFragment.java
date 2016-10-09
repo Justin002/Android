@@ -142,42 +142,30 @@ public class DiscoverFragment extends BaseFragment implements OnClickListener,On
 
 	@Override
 	public void onClick(View v) {
-		// TODO Auto-generated method stub
-		switch (v.getId()) {
-		case R.id.e_investment_ranking_tv:
+		int id = v.getId();
+		if (id == R.id.e_investment_ranking_tv) {
 			if(CommonUtils.getStringByKey(mContext, Constants.EP2P_TOKEN)==null||"".equals( CommonUtils.getStringByKey(mContext, Constants.EP2P_TOKEN))){
 				pushActivity(LoginActivity.class);
 			}else{
 				pushActivity(InvestmentRankingActivity.class);
 			}
-			break;
-		case R.id.e_income_caculator_tv:
+		} else if (id == R.id.e_income_caculator_tv) {
 			pushActivity(IncomeCaculatorActivity.class);
-			break;
-		case R.id.e_newer_novice_tv:
+		} else if (id == R.id.e_newer_novice_tv) {
 			pushActivity(NewerNoviceActivity.class);
-			break;
-		case R.id.e_community_tv:
+		} else if (id == R.id.e_community_tv) {
 			inData();
-			break;
-		case R.id.e_receive_redenvelope_tv:
+		} else if (id == R.id.e_receive_redenvelope_tv) {
 			getShowRedCode();
 			//有红包的情况
 		//	pushActivity(ReceiveRedenvelopeActivity.class);
 			//红包抢光的情况
-			
-			break;
-		case R.id.e_coupon_tv:
+		} else if (id == R.id.e_coupon_tv) {
 			getInterest();//展示加息劵接口
-			break;
-
-		case R.id.title_right_image:
+		} else if (id == R.id.title_right_image) {
 			pushActivity(RatioStationPlayActivity.class);
-			break;
-
-		case R.id.radio_more_bt:
+		} else if (id == R.id.radio_more_bt) {
 			pushActivity(RatioStationListActivity.class);
-			break;
 		}
 
 	}

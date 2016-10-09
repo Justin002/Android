@@ -1,0 +1,561 @@
+# view res/layout/activity_investmented_project.xml #generated:65
+# view res/layout/layout_product_details_tab.xml #generated:57
+-keep class android.support.v4.view.ViewPager { <init>(...); }
+
+# view AndroidManifest.xml #generated:666
+-keep class cn.jpush.android.service.AlarmReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:619
+-keep class cn.jpush.android.service.DaemonService { <init>(...); }
+
+# view AndroidManifest.xml #generated:596
+-keep class cn.jpush.android.service.DownloadService { <init>(...); }
+
+# view AndroidManifest.xml #generated:644
+-keep class cn.jpush.android.service.PushReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:605
+-keep class cn.jpush.android.service.PushService { <init>(...); }
+
+# view res/layout/jpush_webview_layout.xml #generated:2
+-keep class cn.jpush.android.ui.FullScreenView { <init>(...); }
+
+# view AndroidManifest.xml #generated:577
+-keep class cn.jpush.android.ui.PopWinActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:584
+-keep class cn.jpush.android.ui.PushActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:630
+-keep class com.baidu.location.f { <init>(...); }
+
+# view AndroidManifest.xml #generated:55
+-keep class com.beyondsoft.ep2p.ControllerApplication { <init>(...); }
+
+# view AndroidManifest.xml #generated:299
+-keep class com.beyondsoft.ep2p.activity.EServicerAgreementActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:75
+-keep class com.beyondsoft.ep2p.activity.LoginActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:70
+-keep class com.beyondsoft.ep2p.activity.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:426
+-keep class com.beyondsoft.ep2p.activity.SimpleWebActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:60
+-keep class com.beyondsoft.ep2p.activity.StartPageActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:124
+-keep class com.beyondsoft.ep2p.activity.discover.CommunityMyActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:116
+-keep class com.beyondsoft.ep2p.activity.discover.ECommunityActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:132
+-keep class com.beyondsoft.ep2p.activity.discover.ECommunityCardDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:120
+-keep class com.beyondsoft.ep2p.activity.discover.ECommunitySecondActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:128
+-keep class com.beyondsoft.ep2p.activity.discover.ECommunitySendCardActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:99
+-keep class com.beyondsoft.ep2p.activity.discover.GetAddRateRollActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:103
+-keep class com.beyondsoft.ep2p.activity.discover.GetRollDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:83
+-keep class com.beyondsoft.ep2p.activity.discover.IncomeCaculatorActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:79
+-keep class com.beyondsoft.ep2p.activity.discover.InvestmentRankingActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:87
+-keep class com.beyondsoft.ep2p.activity.discover.NewerNoviceActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:107
+-keep class com.beyondsoft.ep2p.activity.discover.RatioStationListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:111
+-keep class com.beyondsoft.ep2p.activity.discover.RatioStationPlayActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:487
+-keep class com.beyondsoft.ep2p.activity.discover.RatioStationPlayByTestActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:91
+-keep class com.beyondsoft.ep2p.activity.discover.ReceiveRedenvelopeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:95
+-keep class com.beyondsoft.ep2p.activity.discover.ReceiveRedenvelopeDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:482
+-keep class com.beyondsoft.ep2p.activity.discover.RedFirstFinishActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:483
+-keep class com.beyondsoft.ep2p.activity.discover.RedResultFinishResultActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:691
+-keep class com.beyondsoft.ep2p.activity.discover.WebViewActivity { <init>(...); }
+
+# view res/layout/component_listview.xml #generated:7
+-keep class com.beyondsoft.ep2p.activity.discover.componet.PullRefreshLayout { <init>(...); }
+
+# view AndroidManifest.xml #generated:136
+-keep class com.beyondsoft.ep2p.activity.discover.service.MediaPlayerService { <init>(...); }
+
+# view AndroidManifest.xml #generated:267
+-keep class com.beyondsoft.ep2p.activity.home.AuthenticationActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:283
+-keep class com.beyondsoft.ep2p.activity.home.BuySucceedActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:163
+-keep class com.beyondsoft.ep2p.activity.home.CFPTypeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:275
+-keep class com.beyondsoft.ep2p.activity.home.CreditorRightsDetailsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:251
+-keep class com.beyondsoft.ep2p.activity.home.EarningsCalculatorActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:195
+-keep class com.beyondsoft.ep2p.activity.home.ExperienceActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:187
+-keep class com.beyondsoft.ep2p.activity.home.ExperienceDetailsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:243
+-keep class com.beyondsoft.ep2p.activity.home.HomeProductDetailsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:307
+-keep class com.beyondsoft.ep2p.activity.home.ImagePagerActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:259
+-keep class com.beyondsoft.ep2p.activity.home.ImmediatelyInvestActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:219
+-keep class com.beyondsoft.ep2p.activity.home.InvestSucceedActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:211
+-keep class com.beyondsoft.ep2p.activity.home.JoinSucceedActivity { <init>(...); }
+
+# view res/layout/activity_home_heads.xml #generated:17
+-keep class com.beyondsoft.ep2p.activity.home.LoopViewPager { <init>(...); }
+
+# view AndroidManifest.xml #generated:171
+-keep class com.beyondsoft.ep2p.activity.home.NewUserRegisterActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:155
+-keep class com.beyondsoft.ep2p.activity.home.NewsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:147
+-keep class com.beyondsoft.ep2p.activity.home.NoticeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:291
+-keep class com.beyondsoft.ep2p.activity.home.NoticeContextActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:179
+-keep class com.beyondsoft.ep2p.activity.home.ProductDetailsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:203
+-keep class com.beyondsoft.ep2p.activity.home.RaiseInterestActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:140
+-keep class com.beyondsoft.ep2p.activity.home.RegisterActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:227
+-keep class com.beyondsoft.ep2p.activity.home.SBTZInvestSucceedActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:235
+-keep class com.beyondsoft.ep2p.activity.home.ZRInvestSucceedActivity { <init>(...); }
+
+# view res/layout/image_detail_pager.xml #generated:6
+-keep class com.beyondsoft.ep2p.activity.home.adapter.HackyViewPager { <init>(...); }
+
+# view AndroidManifest.xml #generated:433
+-keep class com.beyondsoft.ep2p.activity.mine.activity.AboutActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:385
+-keep class com.beyondsoft.ep2p.activity.mine.activity.AddBankCardActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:411
+-keep class com.beyondsoft.ep2p.activity.mine.activity.AssetStatisticsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:458
+-keep class com.beyondsoft.ep2p.activity.mine.activity.AutoTenderActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:460
+-keep class com.beyondsoft.ep2p.activity.mine.activity.AutoTenderAddMoneyActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:461
+-keep class com.beyondsoft.ep2p.activity.mine.activity.AutoTenderAddParameterActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:462
+-keep class com.beyondsoft.ep2p.activity.mine.activity.AutoTenderAddProjectActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:463
+-keep class com.beyondsoft.ep2p.activity.mine.activity.AutoTenderComplicMoneyActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:464
+-keep class com.beyondsoft.ep2p.activity.mine.activity.AutoTenderComplicParameterActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:465
+-keep class com.beyondsoft.ep2p.activity.mine.activity.AutoTenderComplicProjectActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:459
+-keep class com.beyondsoft.ep2p.activity.mine.activity.AutoTenderNullActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:481
+-keep class com.beyondsoft.ep2p.activity.mine.activity.BankAuthenticationActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:453
+-keep class com.beyondsoft.ep2p.activity.mine.activity.BankCardActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:416
+-keep class com.beyondsoft.ep2p.activity.mine.activity.BankCardValidationActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:446
+-keep class com.beyondsoft.ep2p.activity.mine.activity.CardPackageActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:452
+-keep class com.beyondsoft.ep2p.activity.mine.activity.CashActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:478
+-keep class com.beyondsoft.ep2p.activity.mine.activity.CashDetailSuccessActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:479
+-keep class com.beyondsoft.ep2p.activity.mine.activity.CashExchangeDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:448
+-keep class com.beyondsoft.ep2p.activity.mine.activity.CreditTaskActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:346
+-keep class com.beyondsoft.ep2p.activity.mine.activity.CreditorRightsDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:330
+-keep class com.beyondsoft.ep2p.activity.mine.activity.CreditorRightsTransfActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:504
+-keep class com.beyondsoft.ep2p.activity.mine.activity.CreditorRightsTransfNextActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:335
+-keep class com.beyondsoft.ep2p.activity.mine.activity.CreditorRightsTransfSuccessActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:447
+-keep class com.beyondsoft.ep2p.activity.mine.activity.CreditsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:471
+-keep class com.beyondsoft.ep2p.activity.mine.activity.CreditsExplainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:480
+-keep class com.beyondsoft.ep2p.activity.mine.activity.EnchashmentSuccessActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:434
+-keep class com.beyondsoft.ep2p.activity.mine.activity.FeedbackActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:484
+-keep class com.beyondsoft.ep2p.activity.mine.activity.ForgetPasswordActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:485
+-keep class com.beyondsoft.ep2p.activity.mine.activity.ForgetPasswordTypeTelActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:445
+-keep class com.beyondsoft.ep2p.activity.mine.activity.GesturePasswordActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:308
+-keep class com.beyondsoft.ep2p.activity.mine.activity.InvestmentedProjectActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:435
+-keep class com.beyondsoft.ep2p.activity.mine.activity.InvitePrizeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:486
+-keep class com.beyondsoft.ep2p.activity.mine.activity.ModifyLoginPassWordActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:441
+-keep class com.beyondsoft.ep2p.activity.mine.activity.ModifyLoginPwdActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:444
+-keep class com.beyondsoft.ep2p.activity.mine.activity.ModifyPayPwdActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:455
+-keep class com.beyondsoft.ep2p.activity.mine.activity.ModifyUserNameActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:432
+-keep class com.beyondsoft.ep2p.activity.mine.activity.MoreActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:340
+-keep class com.beyondsoft.ep2p.activity.mine.activity.MyCreditorRightsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:436
+-keep class com.beyondsoft.ep2p.activity.mine.activity.MyInviteListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:406
+-keep class com.beyondsoft.ep2p.activity.mine.activity.NonMainlandAuthActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:454
+-keep class com.beyondsoft.ep2p.activity.mine.activity.PersonalInfomationActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:475
+-keep class com.beyondsoft.ep2p.activity.mine.activity.PhoneBillDetailSuccessActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:450
+-keep class com.beyondsoft.ep2p.activity.mine.activity.PhoneBillExchangeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:474
+-keep class com.beyondsoft.ep2p.activity.mine.activity.PhoneBillExchangeDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:439
+-keep class com.beyondsoft.ep2p.activity.mine.activity.PhoneBoundActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:440
+-keep class com.beyondsoft.ep2p.activity.mine.activity.PhoneBoundAuthActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:314
+-keep class com.beyondsoft.ep2p.activity.mine.activity.ProjectDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:692
+-keep class com.beyondsoft.ep2p.activity.mine.activity.ProjectFinishedDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:438
+-keep class com.beyondsoft.ep2p.activity.mine.activity.RealNameAuthActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:368
+-keep class com.beyondsoft.ep2p.activity.mine.activity.RechargeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:466
+-keep class com.beyondsoft.ep2p.activity.mine.activity.RechargeInstructionsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:467
+-keep class com.beyondsoft.ep2p.activity.mine.activity.RechargeMoneyActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:468
+-keep class com.beyondsoft.ep2p.activity.mine.activity.RechargeSuccessActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:374
+-keep class com.beyondsoft.ep2p.activity.mine.activity.RechargeTimesActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:351
+-keep class com.beyondsoft.ep2p.activity.mine.activity.ReimbursementActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:508
+-keep class com.beyondsoft.ep2p.activity.mine.activity.ReimbursementDoneDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:507
+-keep class com.beyondsoft.ep2p.activity.mine.activity.ReimbursementForAdvance { <init>(...); }
+
+# view AndroidManifest.xml #generated:506
+-keep class com.beyondsoft.ep2p.activity.mine.activity.ReimbursementForProfit { <init>(...); }
+
+# view AndroidManifest.xml #generated:363
+-keep class com.beyondsoft.ep2p.activity.mine.activity.ReimbursementSuccessActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:509
+-keep class com.beyondsoft.ep2p.activity.mine.activity.ReimbursementSuccessAllActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:358
+-keep class com.beyondsoft.ep2p.activity.mine.activity.ReimbursementWaitDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:442
+-keep class com.beyondsoft.ep2p.activity.mine.activity.ResetLoginPwdActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:443
+-keep class com.beyondsoft.ep2p.activity.mine.activity.ResetLoginPwdAuthActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:437
+-keep class com.beyondsoft.ep2p.activity.mine.activity.SecurityCenterActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:380
+-keep class com.beyondsoft.ep2p.activity.mine.activity.SelectBankCardActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:396
+-keep class com.beyondsoft.ep2p.activity.mine.activity.SelectBankTypeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:689
+-keep class com.beyondsoft.ep2p.activity.mine.activity.SelectLoactionActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:401
+-keep class com.beyondsoft.ep2p.activity.mine.activity.SelectRegionActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:690
+-keep class com.beyondsoft.ep2p.activity.mine.activity.SelecteCityActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:469
+-keep class com.beyondsoft.ep2p.activity.mine.activity.SetPayAuthActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:470
+-keep class com.beyondsoft.ep2p.activity.mine.activity.SetPayNewAuthActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:451
+-keep class com.beyondsoft.ep2p.activity.mine.activity.TicketActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:476
+-keep class com.beyondsoft.ep2p.activity.mine.activity.TicketDetailSuccessActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:477
+-keep class com.beyondsoft.ep2p.activity.mine.activity.TicketExchangeDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:457
+-keep class com.beyondsoft.ep2p.activity.mine.activity.TradingListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:488
+-keep class com.beyondsoft.ep2p.activity.mine.activity.ValidateLoginPasswordActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:449
+-keep class com.beyondsoft.ep2p.activity.mine.activity.VipActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:472
+-keep class com.beyondsoft.ep2p.activity.mine.activity.VipDetailSuccessActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:473
+-keep class com.beyondsoft.ep2p.activity.mine.activity.VipExchangeDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:456
+-keep class com.beyondsoft.ep2p.activity.mine.activity.VipLevelActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:325
+-keep class com.beyondsoft.ep2p.activity.mine.activity.WaittingRecieveDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:510
+-keep class com.beyondsoft.ep2p.activity.mine.activity.WaittingRecieveDoneDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:319
+-keep class com.beyondsoft.ep2p.activity.mine.activity.WaittingRecieveQueryActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:390
+-keep class com.beyondsoft.ep2p.activity.mine.activity.WithdrawalActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:421
+-keep class com.beyondsoft.ep2p.activity.mine.activity.WithdrawalValicationActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:669
+-keep class com.beyondsoft.ep2p.utils.MyReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:532
+-keep class com.beyondsoft.ep2p.utils.WBShareActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:523
+-keep class com.beyondsoft.ep2p.utils.WXEntryActivity { <init>(...); }
+
+# view res/layout/activity_add_bank_card.xml #generated:89
+# view res/layout/activity_recharge.xml #generated:104
+-keep class com.beyondsoft.ep2p.view.BankCardNumEditText { <init>(...); }
+
+# view res/layout/layout_home_recommend_listview_item.xml #generated:125
+# view res/layout/layout_recommend_listview_item.xml #generated:132
+-keep class com.beyondsoft.ep2p.view.CountDownButtonView { <init>(...); }
+
+# view res/layout/activity_get_addrateroll.xml #generated:83
+# view res/layout/activity_receive_redenvelope_first.xml #generated:41
+-keep class com.beyondsoft.ep2p.view.DayTimerTextView { <init>(...); }
+
+# view res/layout/activity_discover.xml #generated:53
+-keep class com.beyondsoft.ep2p.view.HorizontalListView { <init>(...); }
+
+# view res/layout/activity_login.xml #generated:29
+# view res/layout/activity_login.xml #generated:77
+# view res/layout/activity_newuser_register.xml #generated:130
+# view res/layout/activity_newuser_register.xml #generated:19
+# view res/layout/activity_newuser_register.xml #generated:38
+-keep class com.beyondsoft.ep2p.view.LineEditText { <init>(...); }
+
+# view res/layout/fragment_fk_information.xml #generated:103
+-keep class com.beyondsoft.ep2p.view.MyHorizontalScrollView { <init>(...); }
+
+# view res/layout/card_package_unuse_item.xml #generated:75
+# view res/layout/card_package_use_item.xml #generated:78
+-keep class com.beyondsoft.ep2p.view.RotateTextView { <init>(...); }
+
+# view res/layout/item_project_bidding_item.xml #generated:121
+# view res/layout/layout_product_details_top.xml #generated:40
+-keep class com.beyondsoft.ep2p.view.RoundProgressBar { <init>(...); }
+
+# view res/layout/activity_home_heads.xml #generated:58
+-keep class com.beyondsoft.ep2p.view.ScrollTextViewLayout { <init>(...); }
+
+# view res/layout/activity_security_center.xml #generated:287
+-keep class com.beyondsoft.ep2p.view.SeekArc { <init>(...); }
+
+# view res/layout/activity_region.xml #generated:88
+-keep class com.beyondsoft.ep2p.view.SideBar { <init>(...); }
+
+# view res/layout/activity_card_package.xml #generated:48
+# view res/layout/activity_my_creditor_rights.xml #generated:53
+# view res/layout/activity_reimbursement.xml #generated:39
+# view res/layout/activity_waitting_recieve_query.xml #generated:40
+-keep class com.beyondsoft.ep2p.view.SpecialViewPager { <init>(...); }
+
+# view res/layout/activity_creditorrights_details.xml #generated:134
+-keep class com.beyondsoft.ep2p.view.TimerTextView { <init>(...); }
+
+# view res/layout/gesture_password.xml #generated:102
+-keep class com.beyondsoft.ep2p.view.gesture.CustomLockView { <init>(...); }
+
+# view res/layout/activity_forget_password_type_yanzm.xml #generated:88
+-keep class com.beyondsoft.ep2p.view.password.GridPasswordConfigView { <init>(...); }
+
+# view res/layout/activity_reset_pay_pwd.xml #generated:79
+# view res/layout/activity_set_pay_auth.xml #generated:79
+# view res/layout/activity_set_pay_auth_new.xml #generated:78
+# view res/layout/layout_buttom_input_pwd.xml #generated:91
+-keep class com.beyondsoft.ep2p.view.password.GridPasswordView { <init>(...); }
+
+# view res/layout/gridpasswordview.xml #generated:4
+-keep class com.beyondsoft.ep2p.view.password.ImeDelBugFixedEditText { <init>(...); }
+
+# view res/layout/activity_auto_tender.xml #generated:60
+# view res/layout/component_listview.xml #generated:21
+-keep class com.beyondsoft.ep2p.view.swipemenulistview.SwipeMenuListView { <init>(...); }
+
+# view res/layout/discover_w_wheel.xml #generated:53
+-keep class com.beyondsoft.ep2p.view.wheel.WheelView { <init>(...); }
+
+# view res/layout/activity_cfp_type.xml #generated:52
+# view res/layout/activity_invest_ranking.xml #generated:64
+# view res/layout/activity_newer_novice.xml #generated:32
+# view res/layout/activity_news_zx.xml #generated:10
+# view res/layout/activity_notice.xml #generated:11
+# view res/layout/activity_ratio_station_listl.xml #generated:5
+# view res/layout/activity_receive_red_detail.xml #generated:29
+# view res/layout/activity_trading_list.xml #generated:33
+# view res/layout/credits_explain.xml #generated:32
+# view res/layout/fragment_card_unuse.xml #generated:32
+# view res/layout/fragment_card_use.xml #generated:31
+# view res/layout/fragment_project_bidding.xml #generated:30
+# view res/layout/fragment_project_finish.xml #generated:21
+# view res/layout/fragment_project_transfer.xml #generated:21
+# view res/layout/fragment_project_waitting.xml #generated:21
+# view res/layout/fragment_reimbursement_done.xml #generated:31
+# view res/layout/fragment_reimbursement_wait1.xml #generated:38
+# view res/layout/fragment_waitting_recieve_doing.xml #generated:21
+# view res/layout/fragment_waitting_recieve_finish.xml #generated:21
+-keep class com.handmark.pulltorefresh.library.PullToRefreshListView { <init>(...); }
+
+# view AndroidManifest.xml #generated:541
+-keep class com.sina.weibo.sdk.component.WeiboSdkBrowser { <init>(...); }
+
+# view AndroidManifest.xml #generated:547
+-keep class com.sina.weibo.sdk.net.DownloadService { <init>(...); }
+
+# view AndroidManifest.xml #generated:567
+-keep class com.tencent.connect.common.AssistActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:554
+-keep class com.tencent.tauth.AuthActivity { <init>(...); }
+
+# view res/layout/umeng_socialize_post_share.xml #generated:2
+# view sw550dp-large-v13\res/layout-sw550dp-large-v13/umeng_socialize_post_share.xml #generated:2
+-keep class com.umeng.socialize.editorpage.KeyboardListenRelativeLayout { <init>(...); }
+
+# view AndroidManifest.xml #generated:513
+-keep class com.umeng.socialize.editorpage.ShareActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:491
+-keep class com.yintong.secure.activity.BaseActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:499
+-keep class com.yintong.secure.service.PayService { <init>(...); }
+
